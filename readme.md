@@ -18,12 +18,10 @@
 
 ### windows
 - `Meta [+ Shift] + grave` – focus next window to the right [left]
-
 - `Meta + Alt + KP_2` – move window to the down
 - `Meta + Alt + KP_4` – move window to the left
 - `Meta + Alt + KP_6` – move  window to theright
 - `Meta + Alt + KP_8` – move window to the up
-
 - `Meta + Alt + KP_5` – toggle floating window
 - `Meta + Alt + KP_0` – toggle fullscreen (same as `F11` in some apps)
 
@@ -75,8 +73,8 @@ i3-msg restart
 
 ## mirrors
 
-- [gihub](https://github.com/dym-sh/i3-config)
-- [lab](https://dym.sh/lab/i3-config)
+- [github](https://github.com/dym-sh/i3-config)
+- [dym.sh](https://dym.sh/cfg/i3)
 - `hyper://814a3791808469b695c17b509cf24a08e82192ea3c2fa29271e00d76a65e2f82/` [[?](https://beakerbrowser.com)]
 
 
