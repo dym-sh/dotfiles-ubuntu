@@ -12,16 +12,16 @@
 - `Ctrl + Alt + Delete`, `Meta + Alt + Break` – logout
 
 ### desktops
-- `Meta + [KP_]{1..9}` – switch to desktop Nr. (also automatically opens some [apps](#apps) if they not already running)
-- `Meta + Alt + {1..9}` – move window to desktop Nr.
+- `Meta + [KP_]{0..9}` – switch to desktop Nr. (also automatically opens some [apps](#apps) if they not already running)
+- `Meta + Alt + {0..9}` – move window to desktop Nr.
 - `Meta [+ Shift] + Tab` – switch to next [prev] desktop
 
 ### windows
-- `Meta [+ Shift] + grave` – focus next window to the right [left]
-- `Meta + Alt + KP_2` – move window to the down
-- `Meta + Alt + KP_4` – move window to the left
-- `Meta + Alt + KP_6` – move  window to theright
-- `Meta + Alt + KP_8` – move window to the up
+- `Meta [+ Shift] + grave` – focus next window on the right [left]
+- `Meta + Alt + KP_2` – move the window down
+- `Meta + Alt + KP_4` – move the window to the left
+- `Meta + Alt + KP_6` – move the window to the right
+- `Meta + Alt + KP_8` – move the window up
 - `Meta + Alt + KP_5` – toggle floating window
 - `Meta + Alt + KP_0` – toggle fullscreen (same as `F11` in some apps)
 
@@ -32,11 +32,11 @@
 #### `Meta + `
 0. organizer ([inventory](https://github.com/dym-sh/inventory))
 1. browser ([firefox](https://firefox.com))
-2. file explorer ([doublecmd]())
+2. file explorer ([doublecmd](https://doublecmd.sourceforge.io))
 3. text editor ([sublime text](https://sublimetext.com))
 4. terminal ([alacritty](https://github.com/alacritty/alacritty))
 
-#### `Meta + KP_`
+#### `Meta + KP_` (numpad)
 0. notes (`subl /Data/Notes/`)
 1. another browser ([chrome](https://google.com/chrome))
 2. extra browser ([beaker](https://beakerbrowser.com))
