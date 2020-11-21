@@ -40,7 +40,7 @@
 0. notes (`subl /Data/Notes/`)
 1. another browser ([chrome](https://google.com/chrome))
 2. extra browser ([beaker](https://beakerbrowser.com))
-3. music player ([audacious](https://audacious-media-player.org))
+3. music player ([rhythmbox](https://<linux-rhythmbox>))
 4. password manager ([keepassxc](https://keepassxc.org))
 5. version control ([sublime merge](https://sublimemerge.com))
 6. unicode table ([gucharmap](https://wiki.gnome.org/Apps/Gucharmap))
@@ -49,8 +49,8 @@
 9. 3d editor ([blender](https://blender.org))
 
 ### keyboard layouts
-- `Meta + Shift + 1` – english (mac)
-- `Meta + Shift + 2` – russian (phonetic_mac)
+- `Meta + F1` – english (mac)
+- `Meta + F2` – russian (phonetic_mac)
 
 
 ## [install](install.sh)
@@ -72,12 +72,11 @@ i3-msg restart
 
 
 ## mirrors
-
-- [github](https://github.com/dym-sh/i3-config)
-- [dym.sh](https://dym.sh/cfg/i3)
-- `hyper://814a3791808469b695c17b509cf24a08e82192ea3c2fa29271e00d76a65e2f82/` [[?](https://beakerbrowser.com)]
+- https://github.com/dym-sh/i3-config
+- https://github.com/dym-sh/i3-config
+- https://dym.sh/lab/i3-config
+- hyper://814a3791808469b695c17b509cf24a08e82192ea3c2fa29271e00d76a65e2f82 /[?](https://beakerbrowser.com)
 
 
 ## license
-
-[mit](./LICENSE)
+[mit](license)

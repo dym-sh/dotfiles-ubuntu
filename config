@@ -12,8 +12,8 @@ bindsym $Meta+$Alt+Pause exec --no-startup-id i3-msg exit
 # bindsym $Meta+Control+$Alt+Delete exec --no-startup-id "sudo shutdown -r now"
 bindsym XF86Hibernate exec --no-startup-id i3-msg "systemctl hibernate"
 
-bindsym Print exec --no-startup-id "import -window root ~/_/PrtScr--$(date '+%Y%m%d@%H%M%S').png"
-bindsym XF86Tools exec --no-startup-id "import -window root ~/_/PrtScr--$(date '+%Y%m%d@%H%M%S').png"
+bindsym Print exec --no-startup-id "import -window root /Data/_/PrtScr--$(date '+%Y%m%d@%H%M%S').png"
+bindsym XF86Tools exec --no-startup-id "import -window root /Data/_/PrtScr--$(date '+%Y%m%d@%H%M%S').png"
 
 
 bindsym $Meta+Shift+Return exec i3-sensible-terminal
@@ -22,6 +22,11 @@ bindsym $Meta+Return exec "rofi -show run"
 
 bindsym $Meta+Tab workspace next
 bindsym $Meta+Shift+Tab workspace prev
+
+bindsym $Meta+Shift+Button4 focus left
+bindsym $Meta+Shift+Button5 focus right
+bindsym $Meta+Button4 workspace prev
+bindsym $Meta+Button5 workspace next
 
 bindsym $Meta+Q kill
 bindsym $Meta+grave focus right
@@ -80,13 +85,13 @@ set $w__9 "900: ..."
 bindsym $Meta+9 workspace $w__9
 
 set $w__KP_0 "KP_0: text"
-bindsym $Meta+KP_0 workspace $w__KP_0; exec /Data/Scripts/desktop/open_notes_dir_in_subl.sh
+bindsym $Meta+KP_0 workspace $w__KP_0; exec /Data/Cfg/open_notes_dir_in_subl.sh
 set $w__KP_1 "KP_1: webkit"
-bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chrome | wc -l) = 0 ] && $(which google-chrome) -s
+bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium-browser | wc -l) = 0 ] && $(which chromium-browser);
 set $w__KP_2 "KP_2: p2p"
-bindsym $Meta+KP_2 workspace $w__KP_2; exec /Data/Apps/beaker
+bindsym $Meta+KP_2 workspace $w__KP_2; exec /Data/Cfg/beaker
 set $w__KP_3 "KP_3: music"
-bindsym $Meta+KP_3 workspace $w__KP_3; exec $(which audacious)
+bindsym $Meta+KP_3 workspace $w__KP_3; exec $(which rhythmbox)
 set $w__KP_4 "KP_4: pwd"
 bindsym $Meta+KP_4 workspace $w__KP_4; exec [ $(ps h -C keepassxc | wc -l) = 0 ] && $(which keepassxc)
 set $w__KP_5 "KP_5: git"
@@ -100,7 +105,6 @@ bindsym $Meta+KP_8 workspace $w__KP_8; exec [ $(ps h -C krita | wc -l) = 0 ] && 
 set $w__KP_9 "KP_9: 3D"
 bindsym $Meta+KP_9 workspace $w__KP_9; exec [ $(ps h -C blender | wc -l) = 0 ] && $(which blender)
 
-
 bindsym $Meta+$Alt+0 move container to workspace $w__0
 bindsym $Meta+$Alt+1 move container to workspace $w__1
 bindsym $Meta+$Alt+2 move container to workspace $w__2
@@ -112,8 +116,10 @@ bindsym $Meta+$Alt+7 move container to workspace $w__7
 bindsym $Meta+$Alt+8 move container to workspace $w__8
 bindsym $Meta+$Alt+9 move container to workspace $w__9
 
-bindsym $Meta+Shift+1 exec setxkbmap us -variant mac && xmodmap ~/.Xmodmap
-bindsym $Meta+Shift+2 exec setxkbmap ru -variant phonetic_mac && xmodmap ~/.Xmodmap
+bindsym $Meta+F1 exec setxkbmap us -variant mac && xmodmap ~/.Xmodmap
+bindsym $Meta+F2 exec setxkbmap ru -variant phonetic_mac && xmodmap ~/.Xmodmap
 
-exec workspace $w__1
-exec --no-startup-id i3-msg "exec /Data/Scripts/desktop/startapps.sh"
+exec --no-startup-id "~/.xsession"
+
+exec i3-sensible-terminal
+
