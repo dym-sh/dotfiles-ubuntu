@@ -74,8 +74,8 @@ i3-msg restart
 ## mirrors
 - https://github.com/dym-sh/i3-config
 - https://github.com/dym-sh/i3-config
-- https://dym.sh/lab/i3-config
-- hyper://814a3791808469b695c17b509cf24a08e82192ea3c2fa29271e00d76a65e2f82 /[?](https://beakerbrowser.com)
+- https://dym.sh/i3-config
+- hyper:// /[?](https://beakerbrowser.com)
 
 
 ## license
