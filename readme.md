@@ -1,5 +1,7 @@
 # i3-config
 
+> fullscreen apps switching
+
 - fullsreen
 - nothing except apps (no decorations, not even statusbar)
 - dark-gray colors
@@ -73,9 +75,9 @@ i3-msg restart
 
 ## mirrors
 - https://github.com/dym-sh/i3-config
-- https://github.com/dym-sh/i3-config
+- https://gitlab.com/dym-sh/i3-config
 - https://dym.sh/i3-config
-- hyper:// /[?](https://beakerbrowser.com)
+- hyper://d6a0ff9453bc48cc0f25ac225a797451577b81f05055d21323bd74f407e6eb44 /[?](https://beakerbrowser.com)
 
 
 ## license
