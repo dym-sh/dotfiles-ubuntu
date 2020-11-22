@@ -87,7 +87,7 @@ bindsym $Meta+9 workspace $w__9
 set $w__KP_0 "KP_0: text"
 bindsym $Meta+KP_0 workspace $w__KP_0; exec /Data/Cfg/open_notes_dir_in_subl.sh
 set $w__KP_1 "KP_1: webkit"
-bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium-browser | wc -l) = 0 ] && $(which chromium-browser);
+bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium-browse | wc -l) = 0 ] && $(which chromium-browser)
 set $w__KP_2 "KP_2: p2p"
 bindsym $Meta+KP_2 workspace $w__KP_2; exec /Data/Cfg/beaker
 set $w__KP_3 "KP_3: music"
