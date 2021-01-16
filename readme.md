@@ -38,15 +38,15 @@
 3. text editor ([sublime text](https://sublimetext.com))
 4. terminal ([alacritty](https://github.com/alacritty/alacritty))
 
-#### `Meta + KP_` (numpad)
+#### `Meta + KP_x` (numpad)
 0. notes (`subl /Data/Notes/`)
-1. another browser ([chrome](https://google.com/chrome))
-2. extra browser ([beaker](https://beakerbrowser.com))
-3. music player ([rhythmbox](https://<linux-rhythmbox>))
+1. another browser ([chromium](https://linuxmint-user-guide.readthedocs.io/en/latest/chromium.html))
+2. _tbd_
+3. music player ([rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox))
 4. password manager ([keepassxc](https://keepassxc.org))
 5. version control ([sublime merge](https://sublimemerge.com))
 6. unicode table ([gucharmap](https://wiki.gnome.org/Apps/Gucharmap))
-7. image viewer ([xnview mp](https://www.xnview.com/en/xnviewmp))
+7. image viewer ([xnview mp](https://xnview.com/en/xnviewmp))
 8. image editor ([krita](https://krita.org/en))
 9. 3d editor ([blender](https://blender.org))
 

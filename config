@@ -12,8 +12,8 @@ bindsym $Meta+$Alt+Pause exec --no-startup-id i3-msg exit
 # bindsym $Meta+Control+$Alt+Delete exec --no-startup-id "sudo shutdown -r now"
 bindsym XF86Hibernate exec --no-startup-id i3-msg "systemctl hibernate"
 
-bindsym Print exec --no-startup-id "import -window root /Data/_/PrtScr--$(date '+%Y%m%d@%H%M%S').png"
-bindsym XF86Tools exec --no-startup-id "import -window root /Data/_/PrtScr--$(date '+%Y%m%d@%H%M%S').png"
+bindsym Print exec --no-startup-id prtsc
+bindsym XF86Tools exec --no-startup-id prtsc
 
 
 bindsym $Meta+Shift+Return exec i3-sensible-terminal
@@ -40,8 +40,8 @@ bindsym $Meta+$Alt+KP_6 move right
 bindsym $Meta+$Alt+KP_0 fullscreen toggle
 bindsym $Meta+$Alt+KP_5 floating toggle
 
-# bindsym XF86MonBrightnessUp exec xbacklight -inc 50
-# bindsym XF86MonBrightnessDown exec xbacklight -dec 50
+	# bindsym XF86MonBrightnessUp exec xbacklight -inc 50
+	# bindsym XF86MonBrightnessDown exec xbacklight -dec 50
 
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
   # bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle
@@ -74,7 +74,7 @@ bindsym $Meta+3 workspace $w__3; exec [ $(ps h -C sublime_text | wc -l) = 0 ] &&
 set $w__4 "400: term"
 bindsym $Meta+4 workspace $w__4; exec [ $(ps h -C alacritty | wc -l) = 0 ] && $(which alacritty)
 set $w__5 "500: ..."
-bindsym $Meta+5 workspace $w__5; exec [ $(ps h -C x____ | wc -l) = 0 ] && $(which x____)
+bindsym $Meta+5 workspace $w__5
 set $w__6 "600: ..."
 bindsym $Meta+6 workspace $w__6
 set $w__7 "700: ..."
@@ -89,7 +89,7 @@ bindsym $Meta+KP_0 workspace $w__KP_0; exec /Data/Cfg/open_notes_dir_in_subl.sh
 set $w__KP_1 "KP_1: webkit"
 bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium | wc -l) = 0 ] && $(which chromium)
 set $w__KP_2 "KP_2: p2p"
-bindsym $Meta+KP_2 workspace $w__KP_2; exec [ $(ps h -C y___ | wc -l) = 0 ] && y___
+bindsym $Meta+KP_2 workspace $w__KP_2
 set $w__KP_3 "KP_3: music"
 bindsym $Meta+KP_3 workspace $w__KP_3; exec $(which rhythmbox)
 set $w__KP_4 "KP_4: pwd"
