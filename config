@@ -87,9 +87,9 @@ bindsym $Meta+9 workspace $w__9
 set $w__KP_0 "KP_0: text"
 bindsym $Meta+KP_0 workspace $w__KP_0; exec /Data/Cfg/open_notes_dir_in_subl.sh
 set $w__KP_1 "KP_1: webkit"
-bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium-browse | wc -l) = 0 ] && $(which chromium-browser)
+bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium | wc -l) = 0 ] && $(which chromium)
 set $w__KP_2 "KP_2: p2p"
-bindsym $Meta+KP_2 workspace $w__KP_2; exec /Data/Cfg/beaker
+bindsym $Meta+KP_2 workspace $w__KP_2; exec [ $(ps h -C y___ | wc -l) = 0 ] && y___
 set $w__KP_3 "KP_3: music"
 bindsym $Meta+KP_3 workspace $w__KP_3; exec $(which rhythmbox)
 set $w__KP_4 "KP_4: pwd"
@@ -122,4 +122,3 @@ bindsym $Meta+F2 exec setxkbmap ru -variant phonetic_mac && xmodmap ~/.Xmodmap
 exec --no-startup-id "~/.xsession"
 
 exec i3-sensible-terminal
-
