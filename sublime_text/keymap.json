@@ -1,0 +1,58 @@
+[ { "keys"
+		: [ "ctrl+tab" ]
+	, "command"
+		: "next_view"
+	}
+
+, { "keys"
+		: [ "ctrl+shift+tab" ]
+	, "command"
+		: "prev_view"
+	}
+
+, { "keys"
+		: [ "alt+z" ]
+	, "command"
+		: "toggle_setting"
+	, "args"
+		: { "setting"
+				: "word_wrap"
+			}
+	}
+
+, { "keys"
+		: [ "ctrl+b" ]
+	, "command"
+		: "toggle_side_bar"
+	}
+
+, { "keys"
+		: [ "insert" ]
+	, "command"
+		: "noop"
+	}
+
+, { "keys"
+		: [ "ctrl+shift+t" ]
+	, "command"
+		: "reopen_last_file"
+	}
+
+, { "keys"
+		: [ "ctrl+t" ]
+	, "command"
+		: "new_file"
+	}
+
+, { "keys"
+		: [ "ctrl+\\" ]
+	, "command"
+		: "show_panel"
+	, "args"
+		: { "panel"
+				: "console"
+			, "toggle"
+				: true
+			}
+	}
+]

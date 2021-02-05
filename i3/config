@@ -64,7 +64,7 @@ client.placeholder      #000000 #0c0c0c #888888 #000000   #0c0c0c
 client.background       #333333
 
 set $w__0 "000: nav"
-bindsym $Meta+0 workspace $w__0; exec [ $(ps h -C inventory | wc -l) = 0 ] && $(which inventory) -s
+bindsym $Meta+0 workspace $w__0
 set $w__1 "100: www"
 bindsym $Meta+1 workspace $w__1; exec [ $(ps -A | grep 'Web Content' | wc -l) = 0 ] && $(which firefox) -s
 set $w__2 "200: cmd"
@@ -85,7 +85,7 @@ set $w__9 "900: ..."
 bindsym $Meta+9 workspace $w__9
 
 set $w__KP_0 "KP_0: text"
-bindsym $Meta+KP_0 workspace $w__KP_0; exec /Data/Cfg/open_notes_dir_in_subl.sh
+bindsym $Meta+KP_0 workspace $w__KP_0; exec [ $(ps h -C inventory | wc -l) = 0 ] && $(which inventory) -s
 set $w__KP_1 "KP_1: webkit"
 bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium | wc -l) = 0 ] && $(which chromium)
 set $w__KP_2 "KP_2: p2p"

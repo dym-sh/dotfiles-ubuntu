@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd `realpath "$0" | xargs dirname`
-
 # backup current config
 mv ~/.config/i3/config \
    ~/.config/i3/config_`date +\%Y\%m\%d\%H\%M`.bak
