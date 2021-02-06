@@ -1,19 +1,21 @@
 # dotfiles-ubuntu
 
 ## includes
+1. [.x files](./x/)
+1. [alacritty](./alacritty/)
+1. [git](./git/)
 1. [i3](./i3/)
-2. [imwheel](./imwheel/)
-3. [.x files](./x/)
-4. ...
-5. ...
-6. will add more later
+1. [imwheel](./imwheel/)
+1. [xnview](./xnview/)
+1. ...
+1. will add more later
 
 
 ## mirrors
 - https://github.com/dym-sh/dotfiles-ubuntu
 - https://gitlab.com/dym-sh/dotfiles-ubuntu
 - https://dym.sh/dotfiles-ubuntu
-- hyper://___ /[?](https://beakerbrowser.com)
+- hyper://39cd65adbfd09fc0e1b40f21503741df5760db1070aee7a4d298271e10ea862d /[?](https://beakerbrowser.com)
 
 
 ## license

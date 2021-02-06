@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><XnView_script version="1.0" name="to_webp (format only)">
+    <Output folder="" filename="{Filename}" case="5" startIndex="1" format="WEBP">
+        <Options overwrite="0" orgDate="false" keepMeta="false" keepICC="false" keepFolder="false" keepParentFolder="false" keepExtension="true" delOrg="true" multipage="false" allPages="false" openExplorer="false" openBrowser="false" clearItems="false"/>
+        <WEBP method="0" quality="90" filesize="128" compress="4" strength="60" sharpness="0" preset="0"/>
+    </Output>
+</XnView_script>
