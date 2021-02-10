@@ -8,12 +8,12 @@
 # - `sudo apt install -y curl git`
 # - `cargo install sd jql`
 
-MIRRORS='/Data/Code/_github'
+MIRRORS='/Data/github'
 
 GH_USER="$1"
 FULL_USER_PATH="$MIRRORS/@$GH_USER"
 [ ! -d "$FULL_USER_PATH" ] \
-  && mkdir "$FULL_USER_PATH"
+  && mkdir -p "$FULL_USER_PATH"
 
 
 echo "Mirroring of Github User: '$GH_USER'"

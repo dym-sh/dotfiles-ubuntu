@@ -1,12 +1,17 @@
 # dotfiles-ubuntu
 
+> ubuntu config files
+
+
 ## includes
 1. [.x files](./x/)
 1. [alacritty](./alacritty/)
 1. [git](./git/)
 1. [i3](./i3/)
 1. [imwheel](./imwheel/)
+1. [sublime_text](./sublime_text/)
 1. [xnview](./xnview/)
+1. [zsh](./zsh/)
 1. ...
 1. will add more later
 
