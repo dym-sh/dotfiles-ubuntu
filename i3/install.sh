@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/zsh
 
 # backup current config
 mv ~/.config/i3/config \
@@ -6,7 +6,7 @@ mv ~/.config/i3/config \
 
 # link new config
 ln -s `pwd`/config \
-   ~/.config/i3/config
+   ~/.config/i3/
 
 # restart i3
 i3-msg restart

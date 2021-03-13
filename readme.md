@@ -6,6 +6,7 @@
 ## includes
 1. [.x files](./x/)
 1. [alacritty](./alacritty/)
+1. [copyq](./copyq/)
 1. [git](./git/)
 1. [i3](./i3/)
 1. [imwheel](./imwheel/)

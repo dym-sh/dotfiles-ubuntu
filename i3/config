@@ -70,7 +70,7 @@ bindsym $Meta+1 workspace $w__1; exec [ $(ps -A | grep 'Web Content' | wc -l) = 
 set $w__2 "200: cmd"
 bindsym $Meta+2 workspace $w__2; exec [ $(ps h -C doublecmd | wc -l) = 0 ] && $(which doublecmd) -s
 set $w__3 "300: code"
-bindsym $Meta+3 workspace $w__3; exec [ $(ps h -C sublime_text | wc -l) = 0 ] && $(which sublime_text)
+bindsym $Meta+3 workspace $w__3; exec [ $(ps h -C subl | wc -l) = 0 ] && $(which subl)
 set $w__4 "400: term"
 bindsym $Meta+4 workspace $w__4; exec [ $(ps h -C alacritty | wc -l) = 0 ] && $(which alacritty)
 set $w__5 "500: ..."
@@ -79,7 +79,7 @@ set $w__6 "600: ..."
 bindsym $Meta+6 workspace $w__6
 set $w__7 "700: ..."
 bindsym $Meta+7 workspace $w__7
-set $w__8 "800: ..."
+set $w__8 "800: games"
 bindsym $Meta+8 workspace $w__8
 set $w__9 "900: ..."
 bindsym $Meta+9 workspace $w__9
@@ -89,7 +89,7 @@ bindsym $Meta+KP_0 workspace $w__KP_0; exec [ $(ps h -C inventory | wc -l) = 0 ]
 set $w__KP_1 "KP_1: webkit"
 bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium | wc -l) = 0 ] && $(which chromium)
 set $w__KP_2 "KP_2: p2p"
-bindsym $Meta+KP_2 workspace $w__KP_2
+bindsym $Meta+KP_2 workspace $w__KP_2; exec $(which beaker)
 set $w__KP_3 "KP_3: music"
 bindsym $Meta+KP_3 workspace $w__KP_3; exec $(which rhythmbox)
 set $w__KP_4 "KP_4: pwd"

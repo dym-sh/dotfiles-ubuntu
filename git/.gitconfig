@@ -1,6 +1,6 @@
 [core]
 	excludesfile = ~/.gitignore
-	editor = /usr/bin/sublime_text
+	editor = subl
 
 [user]
 	name = Dym Sohin
@@ -13,7 +13,7 @@
 	helper = cache --timeout 3600
 
 [diff]
-	tool = /usr/bin/sublime_merge
+	tool = subl
 [difftool]
 	prompt = false
 

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/zsh
 
 setxkbmap -option caps:none
 setxkbmap -option altwin:swap_alt_win
@@ -22,6 +22,6 @@ pulseaudio -k
 # /Cfg/startapps.sh
 # /Cfg/server/sshfs.sh > /dev/null 2>&1 &
 
-imwheel > /dev/null 2>&1 &
+# imwheel > /dev/null 2>&1 &
 
-copyq > /dev/null 2>&1 &
+copyq 2>&1 &

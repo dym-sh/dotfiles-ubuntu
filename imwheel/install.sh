@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ln -s ./.* ~/ # --force
+ln -s ./.imwheelrc ~/ # --force

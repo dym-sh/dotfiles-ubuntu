@@ -23,7 +23,7 @@ DIR=` echo "$REPO" \
     | sd -- '/' '--' \
     `
 
-cd /Data/code/
+cd /Data/Code/
 git clone --depth 1 "$REPO" "$DIR"
 cd "$DIR"
 sublime_text .

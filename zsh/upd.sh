@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/zsh
 
 # update everything
 
@@ -17,8 +17,7 @@ sudo npm up -g
 deno upgrade
 
 # python
-python3 -m pip install --upgrade pip
-python3 -m pip install --upgrade youtube-dlc
+pipupgrade -y --ignore-error
 
 # rust & co
 rustup update
@@ -26,3 +25,8 @@ cargo install-update -a
 
 # haskell
 cabal update
+
+# oh-my-zsh
+cd ~/.oh-my-zsh/ \
+  && ./tools/upgrade.sh \
+  && cd -
