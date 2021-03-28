@@ -1,7 +1,14 @@
-# global modifiers
+# global
+
+## global -- modifiers
 set $Alt Mod1
 set $Meta Mod4
-exec_always --no-startup-id numlockx on
+
+## global -- paths
+set $DEFAULT "/Data/_"
+
+## global -- scripts
+set $PRINT `import -window root "/Data/_/PrtScr--$(date '+%Y%m%d@%H%M%S').png"`
 
 
 # window properties
@@ -10,8 +17,8 @@ popup_during_fullscreen leave_fullscreen
 floating_modifier $Meta
 font pango:DejaVu Sans Mono 8
 
-## colors
-# class                 border  bg      text    indicator child_border
+## window properties -- colors
+  # class               border  bg      text    indicator child_border
 client.focused          #444444 #333333 #888888 #666666   #666666
 client.focused_inactive #333333 #444444 #888888 #444444   #444444
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
@@ -23,19 +30,20 @@ client.background       #333333
 # system actions
 bindsym Control+$Alt+Delete exec --no-startup-id i3-msg "exit"
 bindsym $Meta+$Alt+Pause exec --no-startup-id i3-msg "exit"
-# bindsym $Meta+Control+$Alt+Delete exec --no-startup-id "shutdown -r now"
+  # bindsym $Meta+Control+$Alt+Delete exec --no-startup-id "shutdown -r now"
 bindsym XF86Hibernate exec --no-startup-id "systemctl hibernate"
 bindsym $Meta+Shift+k restart
 
 # screenshots
-bindsym Print exec --no-startup-id prtsc
-bindsym XF86Tools exec --no-startup-id prtsc
+bindsym Print exec --no-startup-id $PRINT
+bindsym XF86Tools exec --no-startup-id $PRINT
 
 # new terminal window
 bindsym $Meta+Shift+Return exec i3-sensible-terminal
 
-# starting apps
+# universal launcher
 bindsym $Meta+Return exec "rofi -show run"
+
 
 # navigating workspaces
 bindsym $Meta+Tab workspace next
@@ -49,7 +57,7 @@ bindsym $Meta+Shift+Button5 focus right
 bindsym $Meta+Button4 workspace prev
 bindsym $Meta+Button5 workspace next
 
-# window actions
+## navigating windows -- closeing, positioning, and resizing
 bindsym $Meta+Shift+Q kill
 bindsym $Meta+Shift+KP_0 fullscreen toggle
 bindsym $Meta+Shift+KP_5 floating toggle
@@ -120,9 +128,9 @@ bindsym $Meta+KP_4 workspace $w__KP_4; exec [ $(ps h -C keepassxc | wc -l) = 0 ]
 set $w__KP_5 "KP_5: git"
 bindsym $Meta+KP_5 workspace $w__KP_5; exec [ $(ps h -C sublime_merge | wc -l) = 0 ] && $(which sublime_merge)
 set $w__KP_6 "KP_6: utf"
-bindsym $Meta+KP_6 workspace $w__KP_6; exec [ $(ps h -C gucharmap | wc -l) = 0 ] && $(which gucharmap)
+bindsym $Meta+KP_6 workspace $w__KP_6; exec [ $(ps h -C gnome-characters | wc -l) = 0 ] && $(which gnome-characters)
 set $w__KP_7 "KP_7: img"
-bindsym $Meta+KP_7 workspace $w__KP_7; exec [ $(ps h -C xnview | wc -l) = 0 ] && $(which xnview) /Data/_
+bindsym $Meta+KP_7 workspace $w__KP_7; exec [ $(ps h -C xnview | wc -l) = 0 ] && $(which xnview) $DEFAULT
 set $w__KP_8 "KP_8: 2D"
 bindsym $Meta+KP_8 workspace $w__KP_8; exec [ $(ps h -C krita | wc -l) = 0 ] && $(which krita)
 set $w__KP_9 "KP_9: 3D"
@@ -147,6 +155,7 @@ bindsym $Meta+F2 exec setxkbmap ru -variant phonetic_mac && xmodmap ~/.Xmodmap
 
 
 # startup
-exec --no-startup-id "~/.xsession"
+exec_always --no-startup-id numlockx on
 exec workspace $w__4
+exec --no-startup-id "~/.xsession"
 exec i3-sensible-terminal

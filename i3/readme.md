@@ -53,7 +53,7 @@
 3. music player ([rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox))
 4. password manager ([keepassxc](https://keepassxc.org))
 5. version control ([sublime merge](https://sublimemerge.com))
-6. unicode table ([gucharmap](https://wiki.gnome.org/Apps/Gucharmap))
+6. emoji and unicode picker ([gnome-characters](https://wiki.gnome.org/Apps/Characters))
 7. image viewer ([xnview mp](https://xnview.com/en/xnviewmp))
 8. 2D editor ([krita](https://krita.org/en))
 9. 3D editor ([blender](https://blender.org))
