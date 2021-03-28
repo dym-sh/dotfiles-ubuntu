@@ -1,60 +1,16 @@
+# global modifiers
 set $Alt Mod1
 set $Meta Mod4
-
 exec_always --no-startup-id numlockx on
+
+
+# window properties
 new_window none
 popup_during_fullscreen leave_fullscreen
 floating_modifier $Meta
 font pango:DejaVu Sans Mono 8
 
-bindsym Control+$Alt+Delete exec --no-startup-id i3-msg "exit"
-bindsym $Meta+$Alt+Pause exec --no-startup-id i3-msg exit
-# bindsym $Meta+Control+$Alt+Delete exec --no-startup-id "sudo shutdown -r now"
-bindsym XF86Hibernate exec --no-startup-id i3-msg "systemctl hibernate"
-
-bindsym Print exec --no-startup-id prtsc
-bindsym XF86Tools exec --no-startup-id prtsc
-
-
-bindsym $Meta+Shift+Return exec i3-sensible-terminal
-bindsym $Meta+Return exec "rofi -show run"
-  # bindsym $Meta+Return exec --no-startup-id dmenu -nb '#222222' -nf '#999999' -sf '#f2f2f2' -sb '#555555'
-
-bindsym $Meta+Tab workspace next
-bindsym $Meta+Shift+Tab workspace prev
-
-bindsym $Meta+Shift+Button4 focus left
-bindsym $Meta+Shift+Button5 focus right
-bindsym $Meta+Button4 workspace prev
-bindsym $Meta+Button5 workspace next
-
-bindsym $Meta+Q kill
-bindsym $Meta+grave focus right
-bindsym $Meta+Shift+grave focus left
-bindsym $Meta+Shift+k restart
-
-bindsym $Meta+$Alt+KP_4 move left
-bindsym $Meta+$Alt+KP_2 move down
-bindsym $Meta+$Alt+KP_8 move up
-bindsym $Meta+$Alt+KP_6 move right
-bindsym $Meta+$Alt+KP_0 fullscreen toggle
-bindsym $Meta+$Alt+KP_5 floating toggle
-
-	# bindsym XF86MonBrightnessUp exec xbacklight -inc 50
-	# bindsym XF86MonBrightnessDown exec xbacklight -dec 50
-
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
-  # bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -3290
-  # bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse set Master -q 5%-
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +3290
-  # bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse set Master -q 5%+
-
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
-
+## colors
 # class                 border  bg      text    indicator child_border
 client.focused          #444444 #333333 #888888 #666666   #666666
 client.focused_inactive #333333 #444444 #888888 #444444   #444444
@@ -63,6 +19,59 @@ client.urgent           #2f343a #900000 #888888 #900000   #900000
 client.placeholder      #000000 #0c0c0c #888888 #000000   #0c0c0c
 client.background       #333333
 
+
+# system actions
+bindsym Control+$Alt+Delete exec --no-startup-id i3-msg "exit"
+bindsym $Meta+$Alt+Pause exec --no-startup-id i3-msg "exit"
+# bindsym $Meta+Control+$Alt+Delete exec --no-startup-id "shutdown -r now"
+bindsym XF86Hibernate exec --no-startup-id "systemctl hibernate"
+bindsym $Meta+Shift+k restart
+
+# screenshots
+bindsym Print exec --no-startup-id prtsc
+bindsym XF86Tools exec --no-startup-id prtsc
+
+# new terminal window
+bindsym $Meta+Shift+Return exec i3-sensible-terminal
+
+# starting apps
+bindsym $Meta+Return exec "rofi -show run"
+
+# navigating workspaces
+bindsym $Meta+Tab workspace next
+bindsym $Meta+Shift+Tab workspace prev
+
+# navigating windows
+bindsym $Meta+grave focus right
+bindsym $Meta+Shift+grave focus left
+bindsym $Meta+Shift+Button4 focus left
+bindsym $Meta+Shift+Button5 focus right
+bindsym $Meta+Button4 workspace prev
+bindsym $Meta+Button5 workspace next
+
+# window actions
+bindsym $Meta+Shift+Q kill
+bindsym $Meta+Shift+KP_0 fullscreen toggle
+bindsym $Meta+Shift+KP_5 floating toggle
+bindsym $Meta+Shift+KP_4 move left
+bindsym $Meta+Shift+KP_6 move right
+bindsym $Meta+Shift+KP_8 move up
+bindsym $Meta+Shift+KP_2 move down
+
+# audio controls
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+  # bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -3290
+  # bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse set Master -q 5%-
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +3290
+  # bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse set Master -q 5%+
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+
+# workspaces (numbers row)
 set $w__0 "000: nav"
 bindsym $Meta+0 workspace $w__0
 set $w__1 "100: www"
@@ -79,32 +88,12 @@ set $w__6 "600: ..."
 bindsym $Meta+6 workspace $w__6
 set $w__7 "700: ..."
 bindsym $Meta+7 workspace $w__7
-set $w__8 "800: games"
+set $w__8 "800: ..."
 bindsym $Meta+8 workspace $w__8
 set $w__9 "900: ..."
 bindsym $Meta+9 workspace $w__9
 
-set $w__KP_0 "KP_0: text"
-bindsym $Meta+KP_0 workspace $w__KP_0; exec [ $(ps h -C inventory | wc -l) = 0 ] && $(which inventory) -s
-set $w__KP_1 "KP_1: webkit"
-bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium | wc -l) = 0 ] && $(which chromium)
-set $w__KP_2 "KP_2: p2p"
-bindsym $Meta+KP_2 workspace $w__KP_2; exec $(which beaker)
-set $w__KP_3 "KP_3: music"
-bindsym $Meta+KP_3 workspace $w__KP_3; exec $(which rhythmbox)
-set $w__KP_4 "KP_4: pwd"
-bindsym $Meta+KP_4 workspace $w__KP_4; exec [ $(ps h -C keepassxc | wc -l) = 0 ] && $(which keepassxc)
-set $w__KP_5 "KP_5: git"
-bindsym $Meta+KP_5 workspace $w__KP_5; exec [ $(ps h -C sublime_merge | wc -l) = 0 ] && $(which sublime_merge)
-set $w__KP_6 "KP_6: uni"
-bindsym $Meta+KP_6 workspace $w__KP_6; exec [ $(ps h -C gucharmap | wc -l) = 0 ] && $(which gucharmap)
-set $w__KP_7 "KP_7: img"
-bindsym $Meta+KP_7 workspace $w__KP_7; exec [ $(ps h -C xnview | wc -l) = 0 ] && $(which xnview) /Data/_
-set $w__KP_8 "KP_8: 2D"
-bindsym $Meta+KP_8 workspace $w__KP_8; exec [ $(ps h -C krita | wc -l) = 0 ] && $(which krita)
-set $w__KP_9 "KP_9: 3D"
-bindsym $Meta+KP_9 workspace $w__KP_9; exec [ $(ps h -C blender | wc -l) = 0 ] && $(which blender)
-
+## workspaces (numbers row) -- window-actions
 bindsym $Meta+$Alt+0 move container to workspace $w__0
 bindsym $Meta+$Alt+1 move container to workspace $w__1
 bindsym $Meta+$Alt+2 move container to workspace $w__2
@@ -116,9 +105,48 @@ bindsym $Meta+$Alt+7 move container to workspace $w__7
 bindsym $Meta+$Alt+8 move container to workspace $w__8
 bindsym $Meta+$Alt+9 move container to workspace $w__9
 
+
+# workspaces (keypad)
+set $w__KP_0 "KP_0: items"
+bindsym $Meta+KP_0 workspace $w__KP_0; exec [ $(ps h -C inventory | wc -l) = 0 ] && $(which inventory) -s
+set $w__KP_1 "KP_1: webkit"
+bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium | wc -l) = 0 ] && $(which chromium)
+set $w__KP_2 "KP_2: p2p"
+bindsym $Meta+KP_2 workspace $w__KP_2; exec $(which beaker)
+set $w__KP_3 "KP_3: music"
+bindsym $Meta+KP_3 workspace $w__KP_3; exec $(which rhythmbox)
+set $w__KP_4 "KP_4: pwd"
+bindsym $Meta+KP_4 workspace $w__KP_4; exec [ $(ps h -C keepassxc | wc -l) = 0 ] && $(which keepassxc)
+set $w__KP_5 "KP_5: git"
+bindsym $Meta+KP_5 workspace $w__KP_5; exec [ $(ps h -C sublime_merge | wc -l) = 0 ] && $(which sublime_merge)
+set $w__KP_6 "KP_6: utf"
+bindsym $Meta+KP_6 workspace $w__KP_6; exec [ $(ps h -C gucharmap | wc -l) = 0 ] && $(which gucharmap)
+set $w__KP_7 "KP_7: img"
+bindsym $Meta+KP_7 workspace $w__KP_7; exec [ $(ps h -C xnview | wc -l) = 0 ] && $(which xnview) /Data/_
+set $w__KP_8 "KP_8: 2D"
+bindsym $Meta+KP_8 workspace $w__KP_8; exec [ $(ps h -C krita | wc -l) = 0 ] && $(which krita)
+set $w__KP_9 "KP_9: 3D"
+bindsym $Meta+KP_9 workspace $w__KP_9; exec [ $(ps h -C blender | wc -l) = 0 ] && $(which blender)
+
+## workspaces (keypad) -- window-actions
+bindsym $Meta+$Alt+KP_0 move container to workspace $w__KP_0
+bindsym $Meta+$Alt+KP_1 move container to workspace $w__KP_1
+bindsym $Meta+$Alt+KP_2 move container to workspace $w__KP_2
+bindsym $Meta+$Alt+KP_3 move container to workspace $w__KP_3
+bindsym $Meta+$Alt+KP_4 move container to workspace $w__KP_4
+bindsym $Meta+$Alt+KP_5 move container to workspace $w__KP_5
+bindsym $Meta+$Alt+KP_6 move container to workspace $w__KP_6
+bindsym $Meta+$Alt+KP_7 move container to workspace $w__KP_7
+bindsym $Meta+$Alt+KP_8 move container to workspace $w__KP_8
+bindsym $Meta+$Alt+KP_9 move container to workspace $w__KP_9
+
+
+# keyboard layouts
 bindsym $Meta+F1 exec setxkbmap us -variant mac && xmodmap ~/.Xmodmap
 bindsym $Meta+F2 exec setxkbmap ru -variant phonetic_mac && xmodmap ~/.Xmodmap
 
-exec --no-startup-id "~/.xsession"
 
+# startup
+exec --no-startup-id "~/.xsession"
+exec workspace $w__4
 exec i3-sensible-terminal

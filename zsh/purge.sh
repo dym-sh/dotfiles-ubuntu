@@ -22,3 +22,7 @@ rm ~/.xsession-errors*
 # relete occasional junk
 rm ~/rmlint.*
 
+# empty trash
+rm -rf ~/.local/share/Trash
+
+rm -rf /[A-Z]*/.Trash-1000/

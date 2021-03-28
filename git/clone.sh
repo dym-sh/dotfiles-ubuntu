@@ -1,6 +1,5 @@
 #!/bin/bash
 
-## /Data/Cfg/code
 # > clone and open for editing a newly forked git repo
 
 ## requires

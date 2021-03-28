@@ -13,6 +13,9 @@ plugins=( git )
 source "$ZSH/oh-my-zsh.sh"
 
 
+export PATH="$PATH":"$HOME/snap/flutter/common/flutter/.pub-cache/bin"
+
+
 # oh-my-zsh newline after promt for the theme lambda
 PROMPT='> %~ $(git_prompt_info)%{$reset_color%}
 λ '
