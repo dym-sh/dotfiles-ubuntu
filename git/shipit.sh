@@ -1,6 +1,11 @@
 #!/bin/zsh
 
-hyp sync ./ `cat ./.hyper`
+if [ -f './.hyper' ]; then
+  hyp sync ./ `cat ./.hyper` -y
+else
+	echo 'Create new hyper-drive?'
+  hyp sync ./
+fi
 
 ssh-add ~/.ssh/github-com
 ssh-add ~/.ssh/gitlab-com
