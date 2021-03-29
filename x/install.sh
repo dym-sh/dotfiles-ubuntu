@@ -1,5 +1,4 @@
 #!/bin/bash
 
-ln -s `pwd`/.x* ~/ # --force
-
-ln -s `pwd`/.X* ~/ # --force
+# link .x-files
+ln -s `pwd`/.[xX]* ~/ # --force

@@ -4,10 +4,10 @@
 ln -s `pwd`/.profile ~/ # --force
 ln -s `pwd`/.z* ~/ # --force
 
+# link scripts
 ln -s `pwd`/upd.sh '/usr/local/bin/upd'
 
 ln -s `pwd`/opti.sh '/usr/local/bin/opti'
-ln -s `pwd`/prtsc.sh '/usr/local/bin/prtsc'
 
 ln -s `pwd`/kk.sh '/usr/local/bin/kk'
 ln -s `pwd`/purge.sh '/usr/local/bin/purge'
