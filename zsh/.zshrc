@@ -13,26 +13,23 @@ plugins=( git )
 source "$ZSH/oh-my-zsh.sh"
 
 
-export PATH="$PATH":"$HOME/snap/flutter/common/flutter/.pub-cache/bin"
-
-
 # oh-my-zsh newline after promt for the theme lambda
 PROMPT='> %~ $(git_prompt_info)%{$reset_color%}
 λ '
 
 
 # aliases
-alias bc="bc -l"
-alias l="exa -alhg --git --group-directories-first --color-scale -s ext"
-alias ll="l -T"
-alias ls="ls -AF --group-directories-first"
-alias d="du -ch --max-depth=1"
-alias md="mkdir"
+alias bc='bc -l'
+alias l='exa -alhg --git --group-directories-first --color-scale -s ext'
+alias ll='l -T'
+alias ls='ls -AF --group-directories-first'
+alias d='du -ch --max-depth=1'
+alias md='mkdir'
 
-alias i="sudo apt install -y"
-alias un="sudo apt remove -y"
-alias gnpm="sudo npm -g"
-alias n="sudo n"
+alias i='sudo apt install -y'
+alias un='sudo apt remove -y'
+
+alias subs='youtube-dl --write-auto-sub --sub-lang en'
 
 
 # funtions

@@ -10,8 +10,8 @@ sudo apt autoclean -y
 
 # node + npm
 sudo n lts
-sudo npm i -g npm
-sudo npm up -g
+npm i -g npm
+npm up -g
 
 # deno
 deno upgrade

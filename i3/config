@@ -150,8 +150,8 @@ bindsym $Meta+$Alt+KP_9 move container to workspace $w__KP_9
 
 
 # keyboard layouts
-bindsym $Meta+F1 exec setxkbmap us -variant mac && xmodmap ~/.Xmodmap
-bindsym $Meta+F2 exec setxkbmap ru -variant phonetic_mac && xmodmap ~/.Xmodmap
+# bindsym $Meta+F1 exec setxkbmap us -variant mac && xmodmap ~/.Xmodmap
+# bindsym $Meta+F2 exec setxkbmap ru -variant phonetic_mac && xmodmap ~/.Xmodmap
 
 
 # startup

@@ -5,16 +5,24 @@
 
 ## includes
 1. [.x files](./x/)
-1. [alacritty](./alacritty/)
-1. [copyq](./copyq/)
+1. [alacritty](./alacritty/) /[?](https://github.com/alacritty/alacritty)
+1. [copyq](./copyq/) /[?](https://github.com/hluk/CopyQ)
 1. [fonts](./fonts/)
-1. [git](./git/)
+1. [git](./git/) /[?](https://git-scm.com)
 1. [gtk](./gtk/)
-1. [i3](./i3/)
-1. [imwheel](./imwheel/)
-1. [sublime_text](./sublime_text/)
-1. [xnview](./xnview/)
-1. [zsh](./zsh/)
+1. [hypercore](./hypercore/) /[?](https://hypercore-protocol.org)
+1. [i3](./i3/) /[?](https://i3wm.org) (+rofi /[?](https://github.com/davatorium/rofi))
+1. [imwheel](./imwheel/) /[?](http://imwheel.sourceforge.net)
+1. [keepassxc](./keepassxc/) /[?](https://keepassxc.org)
+1. [poste-io](./poste-io/) /[?](https://poste.io)
+1. [server scripts](./server/)
+1. [sublime_text](./sublime_text/) /[?](https://sublimetext.com)
+1. [xnview](./xnview/) /[?](https://xnview.com)
+1. [zsh](./zsh/) /[?](https://ohmyz.sh)
+1. [](.//) /[?]()
+1. [](.//) /[?]()
+1. [](.//) /[?]()
+1. [](.//) /[?]()
 1. ...
 1. will add more later
 

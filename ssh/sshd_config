@@ -1,0 +1,36 @@
+Include /etc/ssh/sshd_config.d/*.conf
+
+AcceptEnv LANG LC_*
+AuthorizedKeysFile %h/.ssh/authorized_keys
+Banner none
+ChallengeResponseAuthentication no
+HostbasedAuthentication no
+HostKey /etc/ssh/ssh_host_dsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+IgnoreRhosts yes
+KeyRegenerationInterval 3600
+LoginGraceTime 120
+LogLevel INFO
+MaxAuthTries 5
+MaxSessions 5
+PasswordAuthentication no
+PermitEmptyPasswords no
+PermitRootLogin yes
+Port 567
+PrintLastLog no
+PrintMotd no
+Protocol 2
+PubkeyAuthentication yes
+RhostsRSAAuthentication no
+RSAAuthentication yes
+ServerKeyBits 1024
+StrictModes yes
+Subsystem sftp /usr/lib/openssh/sftp-server
+SyslogFacility AUTH
+TCPKeepAlive yes
+UsePAM yes
+UsePrivilegeSeparation yes
+X11DisplayOffset 10
+X11Forwarding yes

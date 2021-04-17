@@ -1,0 +1,81 @@
+{
+  "Gestures": [
+    {
+      "pattern": [
+        [
+          206,
+          7
+        ]
+      ],
+      "command": {
+        "name": "SaveImage",
+        "settings": {
+          "promptDialog": false
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          -254,
+          0
+        ]
+      ],
+      "command": {
+        "name": "OpenImageInNewTab",
+        "settings": {
+          "position": "default",
+          "focus": true
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          -5,
+          -292
+        ]
+      ],
+      "command": {
+        "name": "SearchTextSelection",
+        "settings": {
+          "position": "default",
+          "focus": true,
+          "searchEngineURL": "",
+          "openEmptySearch": false
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          6,
+          266
+        ]
+      ],
+      "command": {
+        "name": "CloseTab",
+        "settings": {
+          "nextFocus": "default",
+          "closePinned": false
+        }
+      }
+    }
+  ],
+  "Settings": {
+    "Gesture": {
+      "mouseButton": "2",
+      "Trace": {
+        "display": false
+      },
+      "Command": {
+        "display": false
+      },
+      "matchingAlgorithm": "shape-independent"
+    },
+    "General": {
+      "updateNotification": false,
+      "theme": "dark"
+    }
+  }
+}
