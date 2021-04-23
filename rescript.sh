@@ -2,7 +2,7 @@
 
 ## reason-ml
 # from https://reasonml.github.io/docs/en/installation
-gnpm i bs-platform
+npm i -g bs-platform
 
 
 # use

@@ -60,5 +60,9 @@
 
 
 ### keyboard layouts
-- `Meta + F1` – english (mac)
-- `Meta + F2` – russian (phonetic_mac)
+1. english (mac)
+2. russian (phonetic_mac)
+
+#### switch
+- `scroll lock`
+- `[L_Shift] + [R_Shift]`

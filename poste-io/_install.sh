@@ -28,26 +28,27 @@ docker run \
   --ip4 '<IPv4>' \
   --ip6 '<IPv6>' \
   --name 'mailserver' \
-  -h 'mail.<DOMAIN>.<TLD>' \
-  -p 25:25 \
-  -p 12080:80 \
-  -p 12443:443 \
-  -v /etc/localtime:/etc/localtime:ro \
-  -v /var/mail/data:/data \
-  -t analogic/poste.io
+  --hostname 'mail.<DOMAIN>.<TLD>' \
+  --publish 25:25 \
+  --publish 993:993 \
+  --publish 12080:80 \
+  --publish 12443:443 \
+  --volume /etc/localtime:/etc/localtime:ro \
+  --volume /var/mail/data:/data \
+  --tty analogic/poste.io
 
 # admin settings
-firefox https://mail.<DOMAIN>.<TLD>:12443/admin/install/server
+firefox https://mail.<DOMAIN>.<TLD>/admin/install/server
 
 
 # start poste-io on reboot
-mkdir -p ~/scripts/
-cp `pwd`/mailserver.sh ~/scripts/
+mkdir -p '/home/scripts/'
+cp `pwd`/@reboot.sh '/home/scripts/mailserver.sh'
 
 echo "`crontab -l`
-@reboot ~/scripts/mailserver.sh" \
+@reboot /home/scripts/mailserver.sh" \
   | crontab -
 
 
-# start poste-io to configure and such
+# start poste-io now to configure and such
 `pwd`/mailserver.sh

@@ -22,13 +22,19 @@ rm -rf ~/.deno/bin
 ln -s '/usr/local/bin' ~/.deno/bin
 
 
+# snap
+sudo mv /snap/bin/* '/usr/local/bin/'
+sudo rm -rf /snap/bin
+sudo ln -s '/usr/local/bin' /snap/bin
+
+
 # games
 sudo mv /usr/games/* '/usr/local/bin/'
-sudo rm -r '/usr/games'
+sudo rm -rf '/usr/games'
 sudo ln -s '/usr/local/bin' '/usr/games'
 
 sudo mv /usr/local/games/* '/usr/local/bin/'
-sudo rm -r '/usr/local/games'
+sudo rm -rf '/usr/local/games'
 sudo ln -s '/usr/local/bin' '/usr/local/games'
 
 

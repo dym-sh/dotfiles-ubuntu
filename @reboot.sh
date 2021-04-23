@@ -1,8 +1,9 @@
 #!/usr/bin/zsh
 
+
 # startup apps
 
-/Cfg/server/sshfs.sh
+~/.ssh/server-fs.sh
 
 imwheel
 

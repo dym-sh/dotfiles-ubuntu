@@ -5,8 +5,6 @@ BAK='/media/dym/bak_weekly'
 
 udisksctl mount -b '/dev/disk/by-label/bak_weekly'
 
-# bak-daily
-
 rsync -rhP --links --size-only --verbose --delete \
   --exclude '**/.Trash-1000/' \
   --exclude '**/__sapper__/' \

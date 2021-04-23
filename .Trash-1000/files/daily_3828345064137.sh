@@ -1,5 +1,4 @@
-#!/bin/bash
-# backup /Data daily
+#!/usr/bin/zsh
 
 BAK='/media/dym/bak_daily'
 

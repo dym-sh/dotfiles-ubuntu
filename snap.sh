@@ -1,17 +1,17 @@
-# snapd, snapcraft
+#!/usr/bin/zsh
 
+
+# unlock on mint
 sudo rm /etc/apt/preferences.d/nosnap.pref
 
+
+# install
 sudo apt update -y
-
 sudo apt install -y \
-  snapd
+  snapd snapcraft
 
 
-## test
-
+# test
 snap install hello-world
-
 hello-world
-
 snap uninstall hello-world
