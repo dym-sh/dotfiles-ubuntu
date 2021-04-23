@@ -1,6 +1,7 @@
 *~
 ._*
 .DS_Store
+.Trash-1000
 node_modules
 package-lock.json
 config.*
