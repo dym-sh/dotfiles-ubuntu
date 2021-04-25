@@ -16,3 +16,7 @@ echo "`crontab -l`
 
 # link hyp-ignore
 ln -s `pwd`/.hypignore ~/ # --force
+
+
+# link hyperspace
+ln -s '/Data/.privat/hyperspace' ~/.hyperspace # --force

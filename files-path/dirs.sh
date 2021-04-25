@@ -1,32 +1,52 @@
 #!/usr/bin/zsh
 
 # create dirs
-sudo mkdir -m 755 '/Apps' '/Data' '/Cfg' '/Site' '/Server'
-# sudo chmod 755 -R /Cfg /Site /Server
+sudo mkdir -m 755 \
+  '/Apps' '/Data' '/Cfg' '/Site' '/Server' '/Wnd'
 
-# own them
-sudo chown -R "$USER:$USER" '/Apps' '/Data' '/Cfg' '/Site' '/Server'
+sudo chown -R "$USER:$USER" \
+  '/Apps' '/Data' '/Cfg' '/Site' '/Server' '/Wnd'
 
 
-# bind all the dirs
+# bind all the dirs at the current runtime
 udisksctl mount -b '/dev/disk/by-label/Data'
+sudo mount --bind "/media/$USER/Data"  '/Data'
 
-sudo mount --bind "/media/$USER/Data" '/Data'
-sudo mount --bind '/Data/_my' '/Site'
-sudo mount --bind '/Data/_my/dotfiles-ubuntu' '/Cfg'
-sudo mount --bind '/Data/Apps' '/Apps'
+udisksctl mount -b '/dev/disk/by-label/Wnd'
+sudo mount --bind "/media/$USER/Wnd"  '/Wnd'
+
+sudo mount --bind '/Data/_my'  '/Site'
+sudo mount --bind '/Data/_my/dotfiles-ubuntu'  '/Cfg'
+sudo mount --bind '/Data/Apps'  '/Apps'
 
 
-# add to fstab
+# add Data to fstab
 lsblk -o 'UUID,NAME,FSTYPE,LABEL' \
   | grep "Data$" \
-  | grep -Eoe "^[0-9a-z\-]+" \
-  > ~/data-uuid.txt
+  | grep -Eoe "^[0-9a-zA-Z\-]+" \
+  > ~/Data-UUID.txt
 
-echo "UUID=`cat ~/data-uuid.txt`  /Data  ext4  defaults  0  0" \
+echo "UUID=`cat ~/Data-UUID.txt`  /Data  ext4  defaults  0  0" \
   | sudo tee -a '/etc/fstab'
 
+rm ~/Data-UUID.txt
+
+
+# add Wnd to fstab
+lsblk -o 'UUID,NAME,FSTYPE,LABEL' \
+  | grep "Wnd$" \
+  | grep -Eoe "^[0-9a-zA-Z\-]+" \
+  > ~/Wnd-UUID.txt
+
+echo "UUID=`cat ~/Wnd-UUID.txt`  /Wnd  ntfs  defaults  0  2" \
+  | sudo tee -a '/etc/fstab'
+
+rm ~/Wnd-UUID.txt
+
+
+# add mounts to fstab
 echo '# mounts
 /Data/_my/dotfiles-ubuntu  /Cfg   none  bind
 /Data/_my                  /Site  none  bind
+/Data/Apps                 /Apps  none  bind
 ' | sudo tee -a '/etc/fstab'

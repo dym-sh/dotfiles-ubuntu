@@ -14,5 +14,5 @@ ln -s `pwd`/.git* ~/ # --force
 
 
 # link scripts
-ln -s `pwd`/shipit.sh /usr/local/bin/shipit # --force
-ln -s `pwd`/ggc.sh /usr/local/bin/ggc # --force
+ln -s `pwd`/shipit.sh /Apps/shipit # --force
+ln -s `pwd`/ggc.sh /Apps/ggc # --force

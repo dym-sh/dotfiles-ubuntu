@@ -1,12 +1,21 @@
 #!/usr/bin/zsh
 
-# remove junk
+# remove unneeded
 sudo apt purge -y \
-  'libreoffice-*' 'java-*'
+  'libreoffice-*' 'java-*' \
+  celluloid hypnotix hexchat \
+  onboard pix gnote drawing xviewer \
+  redshift warpinator yelp 
+
+
+# update current
+sudo apt update -y
+sudo apt upgrade -y
+
 
 # tools
 sudo apt install -y \
-  curl wget sshfs git \
+  zsh curl wget sshfs git \
   g++ make clang build-essential \
   rmlint ffmpeg lynx \
   usrmerge \
@@ -14,9 +23,9 @@ sudo apt install -y \
   pavucontrol ghostscript \
   fonts-font-awesome
 
+
 # GUI-Apps
 sudo apt install -y \
-  doublecmd-gtk vlc \
-  transmission-gtk copyq \
+  vlc transmission-gtk \
   gimp krita lxappearance \
   kid3

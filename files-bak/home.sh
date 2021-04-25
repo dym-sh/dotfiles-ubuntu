@@ -1,5 +1,6 @@
 #!/usr/bin/zsh
 
+# /Cfg/files-bak/home.sh
 
 # bak $HOME to Data
 rsync -rhP --links --size-only --verbose --delete \
@@ -21,6 +22,9 @@ rsync -rhP --links --size-only --verbose --delete \
   --exclude '.linuxmint/' \
   --exclude '.mozilla/' \
   --exclude '.npm/' \
+  --exclude '.fonts/' \
+  --exclude '.icons/' \
+  --exclude '.themes/' \
   --exclude '.nv/' \
   --exclude '.oh-my-zsh/' \
   --exclude '.pipupgrade/' \
@@ -38,30 +42,3 @@ rsync -rhP --links --size-only --verbose --delete \
   # --exclude Hyperdrive/ \
   # --exclude .hyperdrive/ \
   # --exclude .hyperspace/ \
-
-
-# bak apps from Sys to Data
-rsync -rhP --links --size-only --verbose --delete \
-  '/usr/local/bin/' \
-  '/Data/Apps/_bin'
-
-
-# bak Data
-BAK='/media/dym/baracuda'
-
-udisksctl mount -b '/dev/disk/by-label/baracuda'
-
-restic backup '/Data/.privat' \
-  -p '/Data/.privat/restic/p.txt' \
-  -r "$BAK/.privat"
-
-rsync -rhP --links --size-only --verbose --delete \
-  --exclude '**/.Trash-1000/' \
-  --exclude '**/__sapper__/' \
-  --exclude '**/node_modules/' \
-  --exclude '**/target/' \
-  --exclude '.privat/' \
-  '/Data/' \
-  "$BAK"
-
-udisksctl unmount -b '/dev/disk/by-label/baracuda'

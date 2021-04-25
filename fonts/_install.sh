@@ -1,6 +1,5 @@
 #!/usr/bin/zsh
 
-
 # get a better charmap
 sudo apt install -y \
   gnome-characters
@@ -16,8 +15,10 @@ mkdir -p ~/.fonts/NotoEmoji
 curl -L 'https://raw.githubusercontent.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf' \
   -o ~/.fonts/NotoEmoji/NotoColorEmoji.ttf
 
+
 # link font-priority config
 ln -s `pwd`/.fonts.conf ~/ # --force
+
 
 # rebuild fonts-cache
 fc-cache -fv

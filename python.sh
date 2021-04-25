@@ -6,7 +6,8 @@ sudo apt install -y \
   python-is-python3 \
   python3-pip
 
-ln -s /usr/bin/pip3 /usr/local/bin/pip
+ln -s /usr/bin/pip3 \
+      /usr/local/bin/pip
 
 
 # upgdate all the already installed scripts

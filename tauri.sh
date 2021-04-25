@@ -1,3 +1,17 @@
+#!/usr/bin/zsh
+
+
+# install via npm
+npm i -g \
+  tauri
+
+# add to the project
+npm i --save-dev \
+  tauri
+
+
+# OR compile
+
 # base
 sudo apt update -y
 sudo apt install -y \
@@ -22,12 +36,3 @@ rustup update stable
 
 # tauri
 cargo install tauri-bundler --force
-
-
-# install globaly
-npm i -g \
-  tauri
-
-# and/or add to the project
-npm i --save \
-  tauri

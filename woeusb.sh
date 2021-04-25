@@ -16,5 +16,5 @@ sudo fdisk -l
 # use
 sudo woeusb \
   --target-filesystem NTFS \
-  -d /Data/Apps/_wnd/10.iso \
+  -d /Wnd/Apps/10.iso \
   /dev/sdX

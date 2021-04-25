@@ -10,5 +10,7 @@ sudo apt install -y \
 
 
 # link config
+mkdir -p ~/.config/keepassxc/
+
 ln -s `pwd`/keepassxc.ini \
   ~/.config/keepassxc/

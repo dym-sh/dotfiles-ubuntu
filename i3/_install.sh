@@ -5,16 +5,17 @@
   https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2021.02.02_all.deb \
   keyring.deb SHA256:cccfb1dd7d6b1b6a137bb96ea5b5eef18a0a4a6df1d6c0c37832025d2edaa710
 sudo dpkg -i ./keyring.deb
-sudo echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" \
-  >> /etc/apt/sources.list.d/sur5r-i3.list
+rm ./keyring.deb
 
+echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" \
+  | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
 
-sudo apt update
-sudo apt install i3
+sudo apt update -y
+
 
 # install i3
 sudo apt install -y \
-  i3-wm rofi
+  i3 rofi
 
 
 # backup current config
@@ -23,6 +24,7 @@ mv ~/.config/i3/config \
 
 
 # link new config
+mkdir -p ~/.config/i3/
 ln -s `pwd`/config \
    ~/.config/i3/
 

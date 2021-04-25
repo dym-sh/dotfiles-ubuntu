@@ -2,9 +2,12 @@
 
 # nvidia vulkan support
 
-sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo add-apt-repository -y \
+  ppa:graphics-drivers/ppa
+
 sudo apt upgrade -y
 sudo apt install -y \
+  nvidia-driver-430 phoronix-test-suite \
   vulkan-utils vulkan-tools
 
 sudo nvidia-xconfig \

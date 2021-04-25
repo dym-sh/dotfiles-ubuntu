@@ -1,5 +1,8 @@
 #!/bin/bash
+
 # backup /Data weekly
+# /Cfg/files-bak/home.sh
+
 
 BAK='/media/dym/bak_weekly'
 
