@@ -21,12 +21,13 @@
 - [privacy-badger17](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/) – tracking blocker
 - [sponsorblock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/) – youtube adblocking
 - [i-dont-care-about-cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/) – notice blocker
+- [facebook-container](https://addons.mozilla.org/en-US/firefox/addon/facebook-container/) – facebook-enclosure
+- [decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/) – un-cdn
 - [keepassxc-browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/) – password manager bridge
 - [gesturefy](https://addons.mozilla.org/en-US/firefox/addon/gesturefy/) – perform actions with gestures
 - [image-max-url](https://addons.mozilla.org/en-US/firefox/addon/image-max-url/) – get maximum possible image
 - [save-all-images-webextension](https://addons.mozilla.org/en-US/firefox/addon/save-all-images-webextension/) – image saver
 - [styl-us](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) – user-styling web-pages
-
 
 ### stylus user-css
 - https://github.com/StylishThemes/Github-Dark

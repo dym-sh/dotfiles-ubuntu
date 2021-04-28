@@ -1,7 +1,8 @@
 #!/usr/bin/zsh
 
 # bak $HOME
-# /Cfg/files-bak/home.sh
+cd `realpath "$0" | xargs dirname`
+./home.sh
 
 # bak Data
 BAK='/media/dym/bak_daily'
@@ -18,6 +19,7 @@ rsync -rhP --links --size-only --verbose --delete \
   --exclude '**/node_modules/' \
   --exclude '**/target/' \
   --exclude '.privat/' \
+  --exclude 'Apps/share/Trash/' \
   '/Data/' \
   "$BAK"
 

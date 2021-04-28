@@ -3,7 +3,7 @@
 # insall
 sudo apt update -y
 sudo apt install -y \
-  doublecmd
+  doublecmd-gtk
 
 
 # link config

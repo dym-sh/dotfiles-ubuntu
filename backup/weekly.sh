@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# backup /Data weekly
-# /Cfg/files-bak/home.sh
+# bak $HOME
+cd `realpath "$0" | xargs dirname`
+./home.sh
 
 
 BAK='/media/dym/bak_weekly'
@@ -15,6 +16,10 @@ rsync -rhP --links --size-only --verbose --delete \
   --exclude '**/target/' \
   --exclude '.privat/' \
   --exclude '_/' \
+  --exclude 'Apps/share/Trash/' \
+  --exclude 'Apps_wnd/' \
+  --exclude 'G/' \
+  --exclude 'Iso/' \
   --exclude 'Video/anime/' \
   --exclude 'Video/porn*/' \
   '/Data/' \

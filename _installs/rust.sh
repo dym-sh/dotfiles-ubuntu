@@ -34,7 +34,7 @@ source $HOME/.cargo/env
 ## cargo apps
 cargo install \
   bat exa fd-find \
-  broot jql sd alacritty \
+  broot jql sd \
   xargo
 
 cargo install \

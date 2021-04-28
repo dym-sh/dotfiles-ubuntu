@@ -14,7 +14,6 @@ rsync -rhP --links --size-only --verbose --delete \
   --exclude '.cabal/' \
   --exclude '.cache/' \
   --exclude '.cargo/' \
-  --exclude '.config/' \
   --exclude '.deno/' \
   --exclude '.electron-gyp/' \
   --exclude '.gnupg/' \
@@ -39,6 +38,9 @@ rsync -rhP --links --size-only --verbose --delete \
   --exclude 'Steam/' \
   ~/ \
   '/Data/Home'
+
   # --exclude Hyperdrive/ \
   # --exclude .hyperdrive/ \
   # --exclude .hyperspace/ \
+
+  # --exclude '.config/' \

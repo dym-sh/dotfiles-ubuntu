@@ -323,7 +323,7 @@
     <LoadIconsSeparately>True</LoadIconsSeparately>
     <DelayLoadingTabs>True</DelayLoadingTabs>
     <HighlightUpdatedFiles>True</HighlightUpdatedFiles>
-    <DriveBlackList>*gvfs;*sr0;*vmblock-fuse;*havp;doc;</DriveBlackList>
+    <DriveBlackList>*gvfs;*sr0;*vmblock-fuse;*havp;doc;*sdd;</DriveBlackList>
     <DriveBlackListUnmounted>False</DriveBlackListUnmounted>
   </Behaviours>
   <Tools>
@@ -457,8 +457,8 @@
   <FilesViews>
     <Sorting>
       <CaseSensitivity>0</CaseSensitivity>
-      <NaturalSorting>False</NaturalSorting>
-      <SortFolderMode>1</SortFolderMode>
+      <NaturalSorting>True</NaturalSorting>
+      <SortFolderMode>0</SortFolderMode>
       <NewFilesPosition>2</NewFilesPosition>
       <UpdatedFilesPosition>0</UpdatedFilesPosition>
     </Sorting>
@@ -541,7 +541,7 @@
     <ActionOnDoubleClick>2</ActionOnDoubleClick>
     <OpenedTabs>
       <Left>
-        <ActiveTab>0</ActiveTab>
+        <ActiveTab>4</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
@@ -578,6 +578,54 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
+                  <Path>/Cfg/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>3</Options>
+          <LockPath>/Cfg/</LockPath>
+          <Title>Cfg</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Apps/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>3</Options>
+          <LockPath>/Apps/</LockPath>
+          <Title>Apps</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
                   <Path>/usr/share/applications/</Path>
                 </Paths>
               </Entry>
@@ -588,7 +636,7 @@
           </FileView>
           <Options>3</Options>
           <LockPath>/usr/share/applications/</LockPath>
-          <Title>applications</Title>
+          <Title>apps.desktop</Title>
         </Tab>
         <Tab>
           <FileView Type="columns">
@@ -602,52 +650,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/usr/local/bin/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-          <Options>3</Options>
-          <LockPath>/usr/local/bin/</LockPath>
-          <Title>bin</Title>
-        </Tab>
-        <Tab>
-          <FileView Type="columns">
-            <Sortings>
-              <Sorting>
-                <Direction>1</Direction>
-                <Function>13</Function>
-              </Sorting>
-            </Sortings>
-            <History>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/Data/Sites/dym.sh/about/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-        </Tab>
-        <Tab>
-          <FileView Type="columns">
-            <Sortings>
-              <Sorting>
-                <Direction>1</Direction>
-                <Function>13</Function>
-              </Sorting>
-            </Sortings>
-            <History>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/Data/Bugs/</Path>
+                  <Path>/Cfg/doublecmd/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -658,7 +661,7 @@
         </Tab>
       </Left>
       <Right>
-        <ActiveTab>4</ActiveTab>
+        <ActiveTab>9</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
@@ -695,7 +698,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/Data/Img/2021/01/</Path>
+                  <Path>/Site/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -704,7 +707,55 @@
             </ColumnsView>
           </FileView>
           <Options>3</Options>
-          <LockPath>/Data/Img/2021/01/</LockPath>
+          <LockPath>/Site/</LockPath>
+          <Title>Site</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Site/_note/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>3</Options>
+          <LockPath>/Site/_note/</LockPath>
+          <Title>_note</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Data/Img/2021/05/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>3</Options>
+          <LockPath>/Data/Img/2021/05/</LockPath>
           <Title>i</Title>
         </Tab>
         <Tab>
@@ -712,14 +763,14 @@
             <Sortings>
               <Sorting>
                 <Direction>2</Direction>
-                <Function>2</Function>
+                <Function>7</Function>
               </Sorting>
             </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/Data/Video/2021/01/</Path>
+                  <Path>/Data/Video/2021/05/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -728,7 +779,7 @@
             </ColumnsView>
           </FileView>
           <Options>3</Options>
-          <LockPath>/Data/Video/2021/01/</LockPath>
+          <LockPath>/Data/Video/2021/05/</LockPath>
           <Title>v</Title>
         </Tab>
         <Tab>
@@ -759,8 +810,50 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>2</Direction>
-                <Function>7</Function>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Site/_note/lists/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Data/.privat/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
               </Sorting>
             </Sortings>
             <History>
@@ -788,28 +881,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/Data/Apps/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-        </Tab>
-        <Tab>
-          <FileView Type="columns">
-            <Sortings>
-              <Sorting>
-                <Direction>1</Direction>
-                <Function>13</Function>
-              </Sorting>
-            </Sortings>
-            <History>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/Data/Graphics/</Path>
+                  <Path>/home/dym/.config/doublecmd/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -826,7 +898,7 @@
     <Options>64</Options>
   </Log>
   <History>
-    <SearchReplaceHistory Save="True"/>
+    <SearchReplaceHistory Save="False"/>
     <DirHistory Save="False"/>
     <CmdLineHistory Save="False"/>
     <FileMaskHistory Save="False"/>
@@ -878,7 +950,7 @@
     <DiskSize>16</DiskSize>
     <DiskAlpha>50</DiskAlpha>
     <CustomIcons>0</CustomIcons>
-    <PixelsPerInch>92</PixelsPerInch>
+    <PixelsPerInch>96</PixelsPerInch>
     <ShowButtonGlyphs>0</ShowButtonGlyphs>
     <ShowHiddenDimmed>False</ShowHiddenDimmed>
   </Icons>
@@ -960,15 +1032,15 @@
       <Name>Default</Name>
       <CustomView>False</CustomView>
       <FileSystem>&lt;General&gt;</FileSystem>
-      <PixelsPerInch>92</PixelsPerInch>
+      <PixelsPerInch>96</PixelsPerInch>
       <CursorBorder Enabled="False">
         <Color>-2147483634</Color>
       </CursorBorder>
       <Columns>
         <Column>
           <Title>Name</Title>
-          <FuncString>[DC().GETFILENAME{}]</FuncString>
-          <Width>513</Width>
+          <FuncString>[DC().GETFILENAME{}] </FuncString>
+          <Width>495</Width>
           <Align>0</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -980,18 +1052,18 @@
           <Background>-2147483618</Background>
           <Background2>-2147483618</Background2>
           <MarkColor>11039038</MarkColor>
-          <CursorColor>2631720</CursorColor>
+          <CursorColor>-2147483645</CursorColor>
           <CursorText>-2147483634</CursorText>
           <InactiveCursorColor>-2147483619</InactiveCursorColor>
           <InactiveMarkColor>11039038</InactiveMarkColor>
           <UseInvertedSelection>True</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>False</Overcolor>
+          <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Size</Title>
           <FuncString>[DC().GETFILESIZE{}]</FuncString>
-          <Width>110</Width>
+          <Width>115</Width>
           <Align>1</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1003,18 +1075,18 @@
           <Background>-2147483618</Background>
           <Background2>-2147483618</Background2>
           <MarkColor>11039038</MarkColor>
-          <CursorColor>2631720</CursorColor>
+          <CursorColor>-2147483645</CursorColor>
           <CursorText>-2147483634</CursorText>
           <InactiveCursorColor>-2147483619</InactiveCursorColor>
           <InactiveMarkColor>11039038</InactiveMarkColor>
           <UseInvertedSelection>True</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>False</Overcolor>
+          <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Ext</Title>
           <FuncString>[DC().GETFILETYPE{}] </FuncString>
-          <Width>166</Width>
+          <Width>173</Width>
           <Align>1</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1026,18 +1098,18 @@
           <Background>-2147483618</Background>
           <Background2>-2147483618</Background2>
           <MarkColor>11039038</MarkColor>
-          <CursorColor>2631720</CursorColor>
+          <CursorColor>-2147483645</CursorColor>
           <CursorText>-2147483634</CursorText>
           <InactiveCursorColor>-2147483619</InactiveCursorColor>
           <InactiveMarkColor>11039038</InactiveMarkColor>
           <UseInvertedSelection>True</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>False</Overcolor>
+          <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Date</Title>
           <FuncString>[DC().GETFILETIME{}]</FuncString>
-          <Width>145</Width>
+          <Width>151</Width>
           <Align>1</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1049,26 +1121,26 @@
           <Background>-2147483618</Background>
           <Background2>-2147483618</Background2>
           <MarkColor>11039038</MarkColor>
-          <CursorColor>2631720</CursorColor>
+          <CursorColor>-2147483645</CursorColor>
           <CursorText>-2147483634</CursorText>
           <InactiveCursorColor>-2147483619</InactiveCursorColor>
           <InactiveMarkColor>11039038</InactiveMarkColor>
           <UseInvertedSelection>True</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>False</Overcolor>
+          <Overcolor>True</Overcolor>
         </Column>
       </Columns>
     </ColumnsSet>
   </ColumnsSets>
   <MainWindow>
     <Position Save="True">
-      <Left>0</Left>
-      <Top>0</Top>
-      <Width>1920</Width>
-      <Height>1200</Height>
-      <Maximized>False</Maximized>
+      <Left>62</Left>
+      <Top>347</Top>
+      <Width>1440</Width>
+      <Height>1144</Height>
+      <Maximized>True</Maximized>
       <Splitter>50</Splitter>
-      <PixelsPerInch>92</PixelsPerInch>
+      <PixelsPerInch>96</PixelsPerInch>
     </Position>
   </MainWindow>
   <MultiRenamePresets>
@@ -1217,7 +1289,7 @@
   <UseEnterToCloseHotKeyEditor>True</UseEnterToCloseHotKeyEditor>
   <MarkMaskCaseSensitive>False</MarkMaskCaseSensitive>
   <MarkMaskIgnoreAccents>True</MarkMaskIgnoreAccents>
-  <MarkMaskFilterWindows>False</MarkMaskFilterWindows>
+  <MarkMaskFilterWindows>True</MarkMaskFilterWindows>
   <MarkShowWantedAttribute>False</MarkShowWantedAttribute>
   <MarkDefaultWantedAttribute/>
   <MarkLastWantedAttribute/>

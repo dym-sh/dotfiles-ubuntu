@@ -1,5 +1,5 @@
 { "animation_enabled" : false
-, "atomic_save" : true
+, "atomic_save" : false
 , "auto_close_tags" : false
 , "auto_complete_commit_on_tab" : true
 , "auto_complete_cycle" : true
@@ -10,13 +10,6 @@
 , "copy_with_empty_selection" : false
 , "default_line_ending" : "unix"
 , "drag_text" : false
-, "folder_exclude_patterns" :
-    [ ".svn"
-    , ".git"
-    , ".hg"
-    , "CVS"
-    , "node_modules"
-    ]
 , "font_face" : "DejaVu Sans Mono"
 , "font_size" : 13
 , "line_padding_bottom" : 1
@@ -30,5 +23,6 @@
 , "theme" : "Adaptive.sublime-theme"
 , "translate_tabs_to_spaces" : true
 , "trim_automatic_white_space" : true
+, "trim_trailing_white_space_on_save" : true
 , "word_wrap" : false
 }
