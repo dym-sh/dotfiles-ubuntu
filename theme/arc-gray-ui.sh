@@ -1,11 +1,15 @@
+#!/usr/bin/zsh
+
 # gray GTK theme
+
 sudo apt install -y \
   meson sassc inkscape
 
-python3 -m pip install meson
-python3 -m pip install ninja
+python3 -m pip install \
+  meson ninja
 
-git clone https://github.com/dym-sh/arc-grey-theme --depth 1
+git clone --depth 1 \
+  https://github.com/pinpox/arc-grey-theme
 
 cd arc-grey-theme
 

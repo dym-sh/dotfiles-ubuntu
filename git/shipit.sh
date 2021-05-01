@@ -2,7 +2,7 @@
 
 # sync hyperdrive or create a new one
 if [ -f './.hyper' ]; then
-  hyp sync ./ `cat ./.hyper` -y
+  hyp sync ./ `cat ./.hyper` # -y
 else
   echo 'Create new hyper-drive?'
   hyp sync ./

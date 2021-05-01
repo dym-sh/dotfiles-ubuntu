@@ -27,6 +27,7 @@
 - [gesturefy](https://addons.mozilla.org/en-US/firefox/addon/gesturefy/) – perform actions with gestures
 - [image-max-url](https://addons.mozilla.org/en-US/firefox/addon/image-max-url/) – get maximum possible image
 - [save-all-images-webextension](https://addons.mozilla.org/en-US/firefox/addon/save-all-images-webextension/) – image saver
+- [awesome-emoji-picker](https://addons.mozilla.org/en-US/firefox/addon/awesome-emoji-picker/) – emoji picker
 - [styl-us](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) – user-styling web-pages
 
 ### stylus user-css

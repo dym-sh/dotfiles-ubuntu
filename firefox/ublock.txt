@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1618647358815,
-  "version": "1.34.0",
+  "timeStamp": 1619870150541,
+  "version": "1.35.0",
   "userSettings": {
     "importedLists": [
       "https://www.fanboy.co.nz/enhancedstats.txt"
@@ -38,6 +38,7 @@
     "about-scheme",
     "chrome-extension-scheme",
     "chrome-scheme",
+    "codepen.io",
     "edge-scheme",
     "moz-extension-scheme",
     "opera-scheme",

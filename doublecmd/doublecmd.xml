@@ -541,7 +541,7 @@
     <ActionOnDoubleClick>2</ActionOnDoubleClick>
     <OpenedTabs>
       <Left>
-        <ActiveTab>4</ActiveTab>
+        <ActiveTab>0</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
@@ -650,7 +650,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/Cfg/doublecmd/</Path>
+                  <Path>/Cfg/firefox/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -661,7 +661,7 @@
         </Tab>
       </Left>
       <Right>
-        <ActiveTab>9</ActiveTab>
+        <ActiveTab>4</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
@@ -794,6 +794,30 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
+                  <Path>/Data/Code/_codepen/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>3</Options>
+          <LockPath>/Data/Code/_codepen/</LockPath>
+          <Title>_codepen</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
                   <Path>/Data/Music/</Path>
                 </Paths>
               </Entry>
@@ -818,7 +842,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/Site/_note/lists/</Path>
+                  <Path>/home/dym/.themes/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -839,7 +863,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/Data/.privat/</Path>
+                  <Path>/Data/Code/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -857,6 +881,39 @@
               </Sorting>
             </Sortings>
             <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Data/Img/2021/04/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry>
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Data/_/</Path>
+                </Paths>
+              </Entry>
+              <Entry>
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Data/_/</Path>
+                </Paths>
+              </Entry>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
@@ -881,7 +938,28 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/dym/.config/doublecmd/</Path>
+                  <Path>/Cfg/firefox/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Data/_my/_video/</Path>
                 </Paths>
               </Entry>
             </History>
