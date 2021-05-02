@@ -5,6 +5,12 @@ BAK='/Server/var/bak'
 
 ~/.ssh/server-fs.sh
 
+
+restic backup '/Data/.privat' \
+  -p '/Data/.privat/restic/p.txt' \
+  -r "$BAK/.privat"
+
+
 DIRS=(
 _my
 Books
@@ -27,12 +33,5 @@ for DIR in "${DIRS[@]}"; do
     "$BAK/$DIR"
 
 done
-
-echo "-
--
-# .privat"
-restic backup '/Data/.privat' \
-  -p '/Data/.privat/restic/p.txt' \
-  -r "$BAK/.privat"
 
 umount '/Server'

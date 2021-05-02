@@ -1,3 +1,7 @@
+.ui
 .git
 .DS_Store
 .Trash-1000
+/index.json
+/thumb*
+node_modules

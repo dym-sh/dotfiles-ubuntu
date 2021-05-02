@@ -18,7 +18,6 @@ docker run \
   --name 'mailserver' \
   --hostname 'mail.dym.sh' \
   --publish 25:25 \
-  --publish 465:465 \
   --publish 587:587 \
   --publish 993:993 \
   --publish 12080:80 \

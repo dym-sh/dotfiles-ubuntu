@@ -1,12 +1,12 @@
 #!/usr/bin/zsh
 
 # sync hyperdrive or create a new one
-if [ -f './.hyper' ]; then
-  hyp sync ./ `cat ./.hyper` # -y
-else
-  echo 'Create new hyper-drive?'
-  hyp sync ./
-fi
+# if [ -f './.hyper' ]; then
+#   hyp sync ./ `cat ./.hyper` # -y
+# else
+#   echo 'Create new hyper-drive?'
+#   hyp sync ./
+# fi
 
 # add ssh keys
 ssh-add ~/.ssh/github-com
