@@ -3,6 +3,8 @@
 # get a better charmap
 sudo apt install -y \
   gnome-characters
+# sudo snap install -y \
+#   gnome-characters --edge
 
 
 # uninstall outdated noto-emoji

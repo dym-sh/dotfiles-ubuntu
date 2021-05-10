@@ -12,6 +12,6 @@ sudo apt install -y \
 
 
 # test
-snap install hello-world
+sudo snap install hello-world
 hello-world
-snap uninstall hello-world
+sudo snap uninstall hello-world

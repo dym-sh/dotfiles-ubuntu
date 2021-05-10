@@ -24,8 +24,8 @@ sudo apt install -y \
   usrmerge gparted \
   imagemagick graphicsmagick jpegoptim pngquant \
   pavucontrol ghostscript \
-  fonts-font-awesome dconf-editor
-
+  fonts-font-awesome dconf-editor \
+  numlockx
 
 # GUI-Apps
 sudo apt install -y \
