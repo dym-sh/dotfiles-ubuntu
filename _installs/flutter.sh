@@ -1,3 +1,5 @@
+#!/usr/bin/zsh
+
 # Flutter
 
 sudo apt install -y \
@@ -5,12 +7,14 @@ sudo apt install -y \
   clang cmake ninja-build pkg-config \
   libgtk-3-dev libblkid-dev liblzma-dev libgcrypt20-dev
 
-sudo snap install flutter --classic
+sudo snap install \
+  flutter --classic
 
-sudo snap alias flutter.dart dart
+sudo snap alias \
+  flutter.dart dart
 
 
-## test
+## initialize latest
 flutter sdk-path
 
 
@@ -24,6 +28,8 @@ flutter precache
 
 
 ## android studio
+sudo snap install \
+  android-studio --classic
 
-sudo snap install android-studio --classic
+### start
 android-studio

@@ -31,7 +31,7 @@ sudo flatpak update -y
 
 
 # snap
-sudo snap refresh -y
+sudo snap refresh
 
 
 # # flutter

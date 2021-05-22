@@ -7,9 +7,9 @@ sudo apt install -y \
 
 # start imwheel on reboot
 echo "`crontab -l`
-@reboot /usr/bin/imwheel" \
-  | crontab -
+@reboot `which imwheel`
+"  |  crontab -
 
 
 # link config
-ln -s `pwd`/.imwheelrc ~/ # --force
+ln -s  `pwd`/.imwheelrc  ~/  # --force

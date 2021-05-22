@@ -12,7 +12,7 @@ ln -s  '/Apps'  ~/.local
 
 
 # cargo
-mkdir -p  ~/.cargo/  
+mkdir -p  ~/.cargo/
 cp -RT  ~/.cargo/bin/  '/Apps/'
 rm -rf  ~/.cargo/bin
 ln -s  '/Apps'  ~/.cargo/bin

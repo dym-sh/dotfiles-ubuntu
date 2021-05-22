@@ -6,8 +6,9 @@
 	"installed_packages":
 	[
 		"HTML-CSS-JS Prettify",
+		"Kotlin",
 		"Package Control",
 		"Pretty JSON",
-		"TypeScript"
-	]
+		"TypeScript",
+	],
 }

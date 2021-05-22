@@ -15,6 +15,9 @@
 ### enable avif
 `image.avif.enabled` = true
 
+### tweak cache sizes
+whichever of `browser.cache.` looks too small (in MB)
+
 
 ## Addons
 - [ublock-origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) – adblocking

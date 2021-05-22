@@ -1,13 +1,16 @@
 #!/usr/bin/zsh
 
+
 # bak $HOME
 cd `realpath "$0" | xargs dirname`
 ./home.sh
 
-# bak Data
-BAK='/media/dym/bak_daily'
 
-udisksctl mount -b '/dev/disk/by-label/bak_daily'
+# bak Data
+LABEL='bak_daily'
+BAK="/media/dym/$LABEL"
+
+udisksctl mount -b "/dev/disk/by-label/$LABEL"
 
 restic backup '/Data/.privat' \
   -p '/Data/.privat/restic/p.txt' \
@@ -23,4 +26,4 @@ rsync -rhP --links --size-only --verbose --delete \
   '/Data/' \
   "$BAK"
 
-udisksctl unmount -b '/dev/disk/by-label/bak_daily'
+udisksctl unmount -b "/dev/disk/by-label/$LABEL"

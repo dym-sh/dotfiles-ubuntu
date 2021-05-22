@@ -20,8 +20,9 @@ xmodmap "$HOME/.Xmodmap"
 pulseaudio -k
 
 # /Cfg/startapps.sh
-# /Cfg/server/sshfs.sh > /dev/null 2>&1 &
 
-# imwheel > /dev/null 2>&1 &
+~/.ssh/server.sh 2>&1 &
+
+imwheel 2>&1 &
 
 copyq 2>&1 &

@@ -15,7 +15,7 @@
 	"font_size": 15,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
@@ -29,5 +29,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false
+	"word_wrap": false,
 }

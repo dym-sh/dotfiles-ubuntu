@@ -1,0 +1,29 @@
+! 6/21/2020 https://apps.apple.com
+apps.apple.com###ember243
+
+! 2021-01-15 https://www.instagram.com
+www.instagram.com##._9AhH0
+
+! 2021-01-28 https://www.imdb.com
+www.imdb.com##.styles__MediaViewerTouchHandler-q67kgi-5
+
+! 2021-02-04 https://www.artstation.com
+www.artstation.com##.fbc-badge
+
+! 2021-02-13 https://www.instagram.com
+www.instagram.com##._4bSq7
+www.instagram.com##.GZkEI.ccgHY.NP414
+
+! 2021-03-14 https://www.reddit.com
+www.reddit.com##._3Axd0OX2sZP0PEIHdeocc3
+www.reddit.com##button._2KotRmn9DgdA58Ikji2mnV:nth-of-type(2)
+www.reddit.com##h3._18Q1kN_hFY6M09dHaoehBF
+
+! 2021-03-30
+##[class^='onetrust-']
+
+! 2021-04-05
+www.tiktok.com
+
+! 2021-05-04
+##.fbc-badge-small
