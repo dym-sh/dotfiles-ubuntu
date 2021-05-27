@@ -90,8 +90,8 @@ set $w__3 "300: code"
 bindsym $Meta+3 workspace $w__3; exec [ $(ps h -C subl | wc -l) = 0 ] && $(which subl)
 set $w__4 "400: term"
 bindsym $Meta+4 workspace $w__4; exec [ $(ps h -C alacritty | wc -l) = 0 ] && $(which alacritty)
-set $w__5 "500: ..."
-bindsym $Meta+5 workspace $w__5
+set $w__5 "500: mail"
+bindsym $Meta+5 workspace $w__5; exec [ $(ps h -C thunderbird | wc -l) = 0 ] && $(which thunderbird)
 set $w__6 "600: ..."
 bindsym $Meta+6 workspace $w__6
 set $w__7 "700: ..."
@@ -118,9 +118,9 @@ bindsym $Meta+$Alt+9 move container to workspace $w__9
 set $w__KP_0 "KP_0: items"
 bindsym $Meta+KP_0 workspace $w__KP_0; exec [ $(ps h -C inventory | wc -l) = 0 ] && $(which inventory) -s
 set $w__KP_1 "KP_1: webkit"
-bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chromium | wc -l) = 0 ] && $(which chromium)
+bindsym $Meta+KP_1 workspace $w__KP_1; exec [ $(ps h -C chrome | wc -l) = 0 ] && $(which google-chrome-unstable)
 set $w__KP_2 "KP_2: p2p"
-bindsym $Meta+KP_2 workspace $w__KP_2; exec $(which beaker)
+bindsym $Meta+KP_2 workspace $w__KP_2; exec $(which ___UNDEFINED___)
 set $w__KP_3 "KP_3: music"
 bindsym $Meta+KP_3 workspace $w__KP_3; exec $(which rhythmbox)
 set $w__KP_4 "KP_4: pwd"

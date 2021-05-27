@@ -48,8 +48,8 @@
 
 #### `Meta + KP_{0..9}` (keypad)
 0. items ([inventory](https://github.com/dym-sh/inventory))
-1. webkit ([chromium](https://linuxmint-user-guide.readthedocs.io/en/latest/chromium.html))
-2. p2p browser ([beaker](https://beakerbrowser.com))
+1. webkit ([chrome canary](https://www.ubuntuupdates.org/package/google_chrome/stable/main/base/google-chrome-unstable))
+2. p2p interop (vacant)
 3. music player ([rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox))
 4. password manager ([keepassxc](https://keepassxc.org))
 5. version control ([sublime merge](https://sublimemerge.com))
@@ -60,8 +60,8 @@
 
 
 ### keyboard layouts
-1. english (mac)
-2. russian (phonetic_mac)
+1. english (us_mac)
+2. russian (ru_phonetic_mac)
 
 #### switch
 - `scroll lock`

@@ -10,6 +10,7 @@ openssl dhparam -out /etc/nginx/dhparam.pem 4096
 
 # letsencrypt
 letsencrypt certonly \
+  --nginx \
   --standalone \
   --agree-tos \
   --renew-by-default \
