@@ -53,7 +53,7 @@
       <WcxPlugin Enabled="True">
         <ArchiveExt>zip</ArchiveExt>
         <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
-        <Flags>735</Flags>
+        <Flags>767</Flags>
       </WcxPlugin>
       <WcxPlugin Enabled="True">
         <ArchiveExt>tar</ArchiveExt>
@@ -160,8 +160,8 @@
     </WfxPlugins>
     <TweakPluginWidth0>0</TweakPluginWidth0>
     <TweakPluginHeight0>0</TweakPluginHeight0>
-    <TweakPluginWidth1>0</TweakPluginWidth1>
-    <TweakPluginHeight1>0</TweakPluginHeight1>
+    <TweakPluginWidth1>441</TweakPluginWidth1>
+    <TweakPluginHeight1>401</TweakPluginHeight1>
     <TweakPluginWidth2>0</TweakPluginWidth2>
     <TweakPluginHeight2>0</TweakPluginHeight2>
     <TweakPluginWidth3>0</TweakPluginWidth3>
@@ -638,30 +638,9 @@
           <LockPath>/usr/share/applications/</LockPath>
           <Title>apps.desktop</Title>
         </Tab>
-        <Tab>
-          <FileView Type="columns">
-            <Sortings>
-              <Sorting>
-                <Direction>1</Direction>
-                <Function>13</Function>
-              </Sorting>
-            </Sortings>
-            <History>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/Cfg/firefox/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-        </Tab>
       </Left>
       <Right>
-        <ActiveTab>4</ActiveTab>
+        <ActiveTab>8</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
@@ -746,7 +725,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/Data/Img/2021/05/</Path>
+                  <Path>/Data/Img/2021/06/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -755,22 +734,22 @@
             </ColumnsView>
           </FileView>
           <Options>3</Options>
-          <LockPath>/Data/Img/2021/05/</LockPath>
+          <LockPath>/Data/Img/2021/06/</LockPath>
           <Title>i</Title>
         </Tab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>2</Direction>
-                <Function>7</Function>
+                <Direction>1</Direction>
+                <Function>13</Function>
               </Sorting>
             </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/Data/Video/2021/05/</Path>
+                  <Path>/Data/Video/2021/06/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -779,15 +758,15 @@
             </ColumnsView>
           </FileView>
           <Options>3</Options>
-          <LockPath>/Data/Video/2021/05/</LockPath>
+          <LockPath>/Data/Video/2021/06/</LockPath>
           <Title>v</Title>
         </Tab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>2</Direction>
-                <Function>7</Function>
+                <Direction>1</Direction>
+                <Function>13</Function>
               </Sorting>
             </Sortings>
             <History>
@@ -810,8 +789,8 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>2</Direction>
-                <Function>7</Function>
+                <Direction>1</Direction>
+                <Function>13</Function>
               </Sorting>
             </Sortings>
             <History>
@@ -842,7 +821,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/dym/.themes/</Path>
+                  <Path>/Server/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -850,6 +829,9 @@
               <ColumnsSet>Default</ColumnsSet>
             </ColumnsView>
           </FileView>
+          <Options>3</Options>
+          <LockPath>/Server/etc/nginx/</LockPath>
+          <Title>nginx</Title>
         </Tab>
         <Tab>
           <FileView Type="columns">
@@ -863,103 +845,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/Data/Code/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-        </Tab>
-        <Tab>
-          <FileView Type="columns">
-            <Sortings>
-              <Sorting>
-                <Direction>1</Direction>
-                <Function>13</Function>
-              </Sorting>
-            </Sortings>
-            <History>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/Data/Img/2021/04/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-        </Tab>
-        <Tab>
-          <FileView Type="columns">
-            <Sortings>
-              <Sorting>
-                <Direction>2</Direction>
-                <Function>7</Function>
-              </Sorting>
-            </Sortings>
-            <History>
-              <Entry>
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/Data/_/</Path>
-                </Paths>
-              </Entry>
-              <Entry>
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/Data/_/</Path>
-                </Paths>
-              </Entry>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/Data/_/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-        </Tab>
-        <Tab>
-          <FileView Type="columns">
-            <Sortings>
-              <Sorting>
-                <Direction>1</Direction>
-                <Function>13</Function>
-              </Sorting>
-            </Sortings>
-            <History>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/Cfg/firefox/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-        </Tab>
-        <Tab>
-          <FileView Type="columns">
-            <Sortings>
-              <Sorting>
-                <Direction>1</Direction>
-                <Function>13</Function>
-              </Sorting>
-            </Sortings>
-            <History>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/Data/_my/_video/</Path>
+                  <Path>/Wnd/_/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -1028,7 +914,7 @@
     <DiskSize>16</DiskSize>
     <DiskAlpha>50</DiskAlpha>
     <CustomIcons>0</CustomIcons>
-    <PixelsPerInch>96</PixelsPerInch>
+    <PixelsPerInch>92</PixelsPerInch>
     <ShowButtonGlyphs>0</ShowButtonGlyphs>
     <ShowHiddenDimmed>False</ShowHiddenDimmed>
   </Icons>
@@ -1110,7 +996,7 @@
       <Name>Default</Name>
       <CustomView>False</CustomView>
       <FileSystem>&lt;General&gt;</FileSystem>
-      <PixelsPerInch>96</PixelsPerInch>
+      <PixelsPerInch>92</PixelsPerInch>
       <CursorBorder Enabled="False">
         <Color>-2147483634</Color>
       </CursorBorder>
@@ -1118,7 +1004,7 @@
         <Column>
           <Title>Name</Title>
           <FuncString>[DC().GETFILENAME{}] </FuncString>
-          <Width>495</Width>
+          <Width>474</Width>
           <Align>0</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1141,7 +1027,7 @@
         <Column>
           <Title>Size</Title>
           <FuncString>[DC().GETFILESIZE{}]</FuncString>
-          <Width>115</Width>
+          <Width>110</Width>
           <Align>1</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1164,7 +1050,7 @@
         <Column>
           <Title>Ext</Title>
           <FuncString>[DC().GETFILETYPE{}] </FuncString>
-          <Width>173</Width>
+          <Width>166</Width>
           <Align>1</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1187,7 +1073,7 @@
         <Column>
           <Title>Date</Title>
           <FuncString>[DC().GETFILETIME{}]</FuncString>
-          <Width>151</Width>
+          <Width>145</Width>
           <Align>1</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
