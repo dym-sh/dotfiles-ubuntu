@@ -15,7 +15,7 @@ sudo apt-key fingerprint \
 
 # mint condition
 DISTRO=`cat /etc/os-release | grep 'UBUNTU_CODENAME='`
-if [ $? ]; then
+if [ ! -z "$DISTRO" ]; then
   DISTRO="${DISTRO/'UBUNTU_CODENAME='/}"
 else
   DISTRO=`lsb_release -cs`
