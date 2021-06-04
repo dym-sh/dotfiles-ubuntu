@@ -15,14 +15,15 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
 
 # the `lsb_release` prints linux-mint's codename
 # of which docker has no idea
-
-DISTRO=`cat /etc/os-release | grep 'UBUNTU_CODENAME='`
+U='UBUNTU_CODENAME='
+DISTRO=`cat /etc/os-release | grep $U`
 if [ ! -z "$DISTRO" ]; then
-  DISTRO="${DISTRO/'UBUNTU_CODENAME='/}"
+  DISTRO="${DISTRO/$U/}"
 else
   DISTRO=`lsb_release -cs`
 fi
-echo "$DISTRO"
+echo "DISTRO: '$DISTRO'"
+
 
 echo "
 deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \
@@ -31,6 +32,6 @@ $DISTRO stable \
 " | sudo tee /etc/apt/sources.list.d/docker.list
 
 
-sudo apt-get update -y
+sudo apt update -y
 sudo apt install -y \
   docker-ce docker-ce-cli containerd.io
