@@ -5,10 +5,14 @@
 	],
 	"installed_packages":
 	[
+		"Advanced CSV",
+		"Dart",
+		"FlutterEnhancements",
 		"HTML-CSS-JS Prettify",
 		"Kotlin",
 		"Package Control",
 		"Pretty JSON",
+		"TOML",
 		"TypeScript",
 	],
 }

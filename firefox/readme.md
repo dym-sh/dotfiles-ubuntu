@@ -38,3 +38,10 @@ whichever of `browser.cache.` looks too small (in MB)
 - https://github.com/StylishThemes/StackOverflow-Dark
 - https://github.com/StylishThemes/Wikipedia-Dark
 - https://gitlab.com/vednoc/dark-gitlab
+
+
+## Cookies
+
+### always-block
+- `medium.com`
+

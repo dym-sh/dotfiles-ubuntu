@@ -8,7 +8,7 @@ www.instagram.com##._9AhH0
 www.imdb.com##.styles__MediaViewerTouchHandler-q67kgi-5
 
 ! 2021-02-04 https://www.artstation.com
-www.artstation.com##.fbc-badge
+##[class^='fbc-badge']
 
 ! 2021-02-13 https://www.instagram.com
 www.instagram.com##._4bSq7
@@ -24,6 +24,3 @@ www.reddit.com##h3._18Q1kN_hFY6M09dHaoehBF
 
 ! 2021-04-05
 www.tiktok.com
-
-! 2021-05-04
-##.fbc-badge-small

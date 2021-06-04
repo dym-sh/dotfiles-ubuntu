@@ -34,8 +34,8 @@ sudo flatpak update -y
 sudo snap refresh
 
 
-# # flutter
-# sudo flutter upgrade
+# flutter
+flutter upgrade
 
 
 # oh-my-zsh
