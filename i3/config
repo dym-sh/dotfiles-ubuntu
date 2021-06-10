@@ -8,7 +8,8 @@ set $Meta Mod4
 set $DEFAULT "/Data/_"
 
 ## global -- scripts
-set $PRINT `import -window root "/Data/_/PrtScr--$(date '+%Y%m%d@%H%M%S').png"`
+set $PRINT `prtscr`
+set $PRINT_WND `prtwnd`
 
 
 # window properties
@@ -37,6 +38,7 @@ bindsym $Meta+Shift+k restart
 # screenshots
 bindsym Print exec --no-startup-id $PRINT
 bindsym XF86Tools exec --no-startup-id $PRINT
+bindsym Scroll exec --no-startup-id $PRINT_WND
 
 # new terminal window
 bindsym $Meta+Shift+Return exec i3-sensible-terminal

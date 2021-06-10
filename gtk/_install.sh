@@ -1,3 +1,3 @@
 #!/usr/bin/zsh
 
-ln -s `pwd`/.gtk* ~/ # --force
+ln  -s  `pwd`/.gtk*  ~/  # --force

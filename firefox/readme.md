@@ -8,8 +8,6 @@
 
 ### block auto-refresh/-redirects
 > i.e. appstore
-/from https://superuser.com/a/1265348
-
 `accessibility.blockautorefresh` = frue
 
 ### enable avif
@@ -17,6 +15,13 @@
 
 ### tweak cache sizes
 whichever of `browser.cache.` looks too small (in MB)
+
+### adjust for 4K displays
+`layout.css.devPixelsPerPx` = 2
+
+### allow use of userChrome.css
+> to customize browser-window look
+`toolkit.legacyUserProfileCustomizations.stylesheets` = true
 
 
 ## Addons
@@ -44,4 +49,3 @@ whichever of `browser.cache.` looks too small (in MB)
 
 ### always-block
 - `medium.com`
-

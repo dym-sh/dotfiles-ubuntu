@@ -12,10 +12,10 @@
 , "default_line_ending" : "unix"
 , "drag_text" : false
 , "font_face" : "DejaVu Sans Mono"
-, "font_size" : 15
-, "ignored_packages" : [ "Vintage" ]
-, "line_padding_bottom" : 1
-, "line_padding_top" : 1
+, "font_size" : 13
+, "ignored_packages" : [ "Vintage"]
+, "line_padding_bottom" : 2
+, "line_padding_top" : 2
 , "native_tabs" : "disabled"
 , "open_files_in_new_window" : false
 , "save_on_focus_lost" : true
@@ -26,5 +26,6 @@
 , "translate_tabs_to_spaces" : true
 , "trim_automatic_white_space" : true
 , "trim_trailing_white_space_on_save" : true
+, "ui_scale": 2.0
 , "word_wrap" : false
 }

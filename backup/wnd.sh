@@ -13,5 +13,9 @@ rsync -rhP --links --size-only --verbose --delete \
   '/Wnd/.privat'
 
 rsync -rhP --links --size-only --verbose --delete \
+  --exclude '**/.Trash-1000/' \
+  --exclude '**/__sapper__/' \
+  --exclude '**/node_modules/' \
+  --exclude '**/target/' \
   '/Data/_my/' \
   '/Wnd/_my'
