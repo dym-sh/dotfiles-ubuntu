@@ -15,8 +15,9 @@ calc_reduction()
 
 for FILENAME in "$@"
 do
-  echo "$FILENAME : $FILETYPE"
   FILETYPE=` file -b --mime-type "$FILENAME" `
+  echo "$FILENAME : $FILETYPE"
+
   SIZE_PRE=` stat "$FILENAME" -c '%s' `
 
   case "$FILETYPE" in

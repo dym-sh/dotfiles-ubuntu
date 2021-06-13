@@ -1,7 +1,7 @@
 { "variables"
   : { }
 , "globals"
-  : { "background" : "#2f2f2f"
+  : { "background" : "#222"
     }
 , "rules"
   : [ ]

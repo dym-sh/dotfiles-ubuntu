@@ -13,6 +13,9 @@ sudo apt install -y \
 ln -s `pwd`/.git* ~/ # --force
 
 
+
+BIN=~/.local/bin
+
 # link scripts
-ln -s `pwd`/shipit.sh /Apps/shipit # --force
-ln -s `pwd`/ggc.sh /Apps/ggc # --force
+ln  -s  `pwd`/shipit.sh  "$BIN/shipit"  # --force
+ln  -s  `pwd`/ggc.sh  "$BIN/ggc"  # --force

@@ -36,6 +36,7 @@ whichever of `browser.cache.` looks too small (in MB)
 - [image-max-url](https://addons.mozilla.org/en-US/firefox/addon/image-max-url/) – get maximum possible image
 - [save-all-images-webextension](https://addons.mozilla.org/en-US/firefox/addon/save-all-images-webextension/) – image saver
 - [awesome-emoji-picker](https://addons.mozilla.org/en-US/firefox/addon/awesome-emoji-picker/) – emoji picker
+- [awesome-rss](https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/) – rss button in the address bar
 - [styl-us](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) – user-styling web-pages
 
 ### stylus user-css

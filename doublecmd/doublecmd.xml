@@ -14,13 +14,13 @@
       </Filter>
     </FileFilters>
     <UseCursorBorder>False</UseCursorBorder>
-    <CursorBorderColor>-2147483634</CursorBorderColor>
+    <CursorBorderColor>-2147483627</CursorBorderColor>
     <UseFrameCursor>False</UseFrameCursor>
-    <Foreground>-2147483640</Foreground>
-    <Background>-2147483618</Background>
-    <Background2>-2147483618</Background2>
-    <Cursor>-2147483645</Cursor>
-    <CursorText>-2147483634</CursorText>
+    <Foreground>-2147483639</Foreground>
+    <Background>2236962</Background>
+    <Background2>2236962</Background2>
+    <Cursor>5592405</Cursor>
+    <CursorText>-2147483639</CursorText>
     <Mark>11039038</Mark>
     <InactiveCursor>-2147483619</InactiveCursor>
     <InactiveMark>6509380</InactiveMark>
@@ -541,7 +541,7 @@
     <ActionOnDoubleClick>2</ActionOnDoubleClick>
     <OpenedTabs>
       <Left>
-        <ActiveTab>0</ActiveTab>
+        <ActiveTab>1</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
@@ -640,7 +640,7 @@
         </Tab>
       </Left>
       <Right>
-        <ActiveTab>8</ActiveTab>
+        <ActiveTab>9</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
@@ -845,7 +845,28 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/Wnd/_/</Path>
+                  <Path>/home/dym/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Site/_logo/eye-talk/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -904,7 +925,7 @@
   <Icons>
     <ShowMode>3</ShowMode>
     <ShowOverlays>False</ShowOverlays>
-    <Size>16</Size>
+    <Size>32</Size>
     <Exclude>False</Exclude>
     <ExcludeDirs/>
     <ShowInMenus Enabled="True">
@@ -914,7 +935,7 @@
     <DiskSize>16</DiskSize>
     <DiskAlpha>50</DiskAlpha>
     <CustomIcons>0</CustomIcons>
-    <PixelsPerInch>92</PixelsPerInch>
+    <PixelsPerInch>150</PixelsPerInch>
     <ShowButtonGlyphs>0</ShowButtonGlyphs>
     <ShowHiddenDimmed>False</ShowHiddenDimmed>
   </Icons>
@@ -996,7 +1017,7 @@
       <Name>Default</Name>
       <CustomView>False</CustomView>
       <FileSystem>&lt;General&gt;</FileSystem>
-      <PixelsPerInch>92</PixelsPerInch>
+      <PixelsPerInch>150</PixelsPerInch>
       <CursorBorder Enabled="False">
         <Color>-2147483634</Color>
       </CursorBorder>
@@ -1004,7 +1025,7 @@
         <Column>
           <Title>Name</Title>
           <FuncString>[DC().GETFILENAME{}] </FuncString>
-          <Width>474</Width>
+          <Width>914</Width>
           <Align>0</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1027,7 +1048,7 @@
         <Column>
           <Title>Size</Title>
           <FuncString>[DC().GETFILESIZE{}]</FuncString>
-          <Width>110</Width>
+          <Width>196</Width>
           <Align>1</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1050,7 +1071,7 @@
         <Column>
           <Title>Ext</Title>
           <FuncString>[DC().GETFILETYPE{}] </FuncString>
-          <Width>166</Width>
+          <Width>481</Width>
           <Align>1</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1073,7 +1094,7 @@
         <Column>
           <Title>Date</Title>
           <FuncString>[DC().GETFILETIME{}]</FuncString>
-          <Width>145</Width>
+          <Width>294</Width>
           <Align>1</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>

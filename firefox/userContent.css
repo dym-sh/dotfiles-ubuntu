@@ -1,0 +1,24 @@
+/* add '[pdf]' next to links to PDF files
+ * via https://wiki.archlinux.org/title/Firefox/Tweaks
+ */
+
+a[ href$='.pdf' ]::after
+  {
+  ; font-size: smaller
+  ; content: '[📄.PDF]' !important
+  }
+
+
+@-moz-document url-prefix('about:')
+             , url-prefix("chrome://")
+{
+window
+, browser
+, html
+, body
+  {
+  /*; filter: grayscale(1)*/
+  ; background-color: #222 !important
+  ; --newtab-background-color: #222 !important
+  }
+}

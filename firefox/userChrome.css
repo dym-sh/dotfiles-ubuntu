@@ -1,0 +1,30 @@
+@namespace html url("http://www.w3.org/1999/xhtml");
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/*
+@-moz-document url(chrome://browser/content/browser.xul) {
+
+  #nav-bar { filter: grayscale(1) }
+
+}*/
+
+@supports -moz-bool-pref("browser.proton.enabled")
+{
+
+#appcontent > #content
+, #nav-bar
+, #navigator-toolbox
+, #TabsToolbar
+, #titlebar
+, #toolbar-menubar
+  {
+  ; filter: grayscale(1)
+  ; background: #222 !important
+  }
+
+#tabbrowser-tabpanels
+  {
+  ; background: #222 !important
+  }
+
+}

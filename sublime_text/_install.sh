@@ -17,17 +17,18 @@ sudo apt install -y \
   sublime-text sublime-merge
 
 
-# aliases
-sudo ln -s '/opt/sublime_text/sublime_text' '/Apps/sublime_text'
-sudo ln -s '/opt/sublime_text/sublime_text' '/Apps/s'
+BIN=~/.local/bin
 
-sudo ln -s '/opt/sublime_merge/sublime_merge' '/Apps/sublime_merge'
+# aliases
+sudo  ln  -s  '/opt/sublime_text/sublime_text'  "$BIN/sublime_text"
+sudo  ln  -s  '/opt/sublime_text/sublime_text'  "$BIN/s"
+
+sudo  ln  -s  '/opt/sublime_merge/sublime_merge'  "$BIN/sublime_merge"
 
 
 # link configs
 mkdir -p  ~/.config/sublime-text-3/Packages/
 rm -rf  ~/.config/sublime-text-3/Packages/User
 
-ln -s `pwd` \
+ln  -s  `pwd` \
   ~/.config/sublime-text-3/Packages/User # --force
-

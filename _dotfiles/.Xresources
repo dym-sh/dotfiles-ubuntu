@@ -1,2 +1,4 @@
 Xcursor.size: 48
-Xft.dpi: 220
+Xft.dpi: 150
+Xft.antialias: 1
+rofi.dpi: 300

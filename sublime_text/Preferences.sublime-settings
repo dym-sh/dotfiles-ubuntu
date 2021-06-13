@@ -12,8 +12,8 @@
 , "default_line_ending" : "unix"
 , "drag_text" : false
 , "font_face" : "DejaVu Sans Mono"
-, "font_size" : 13
-, "ignored_packages" : [ "Vintage"]
+, "font_size" : 14
+, "ignored_packages" : [ "Vintage" ]
 , "line_padding_bottom" : 2
 , "line_padding_top" : 2
 , "native_tabs" : "disabled"
@@ -26,6 +26,6 @@
 , "translate_tabs_to_spaces" : true
 , "trim_automatic_white_space" : true
 , "trim_trailing_white_space_on_save" : true
-, "ui_scale": 2.0
+, "ui_scale" : 1.5
 , "word_wrap" : false
 }
