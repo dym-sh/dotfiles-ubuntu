@@ -7,10 +7,10 @@ sudo add-apt-repository -y \
 
 sudo apt upgrade -y
 sudo apt install -y \
-  nvidia-driver-430 phoronix-test-suite \
-  vulkan-utils vulkan-tools
+  nvidia-driver-460 vulkan-tools
+  #phoronix-test-suite \
+  #vulkan-utils
 
 sudo nvidia-xconfig \
   -a --cool-bits=28 \
   --allow-empty-initial-configuration
-

@@ -13,15 +13,14 @@ echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-relea
 sudo apt update -y
 
 
-# install i3
+# install i3 + rofi
 sudo apt install -y \
   i3 rofi
 
 
 # backup current config
 mv ~/.config/i3/config \
-   ~/.config/i3/config_`date +\%Y\%m\%d\%H\%M`.bak
-
+   ~/.config/i3/config_`date '+%Y-%m-%d@%H-%M'`.bak
 
 # link new config
 mkdir -p ~/.config/i3/

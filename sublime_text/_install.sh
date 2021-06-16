@@ -18,17 +18,20 @@ sudo apt install -y \
 
 
 BIN=~/.local/bin
+mkdir  -p  "$BIN"
 
 # aliases
-sudo  ln  -s  '/opt/sublime_text/sublime_text'  "$BIN/sublime_text"
-sudo  ln  -s  '/opt/sublime_text/sublime_text'  "$BIN/s"
+ln  -s  '/opt/sublime_text/sublime_text'  "$BIN/sublime_text"
+ln  -s  '/opt/sublime_text/sublime_text'  "$BIN/s"
 
-sudo  ln  -s  '/opt/sublime_merge/sublime_merge'  "$BIN/sublime_merge"
+ln  -s  '/opt/sublime_merge/sublime_merge'  "$BIN/sublime_merge"
 
 
 # link configs
-mkdir -p  ~/.config/sublime-text-3/Packages/
-rm -rf  ~/.config/sublime-text-3/Packages/User
+mkdir -p  ~/.config/sublime-text/Packages/
+mv  ~/.config/sublime-text/Packages/User \
+  ~/.config/sublime-text/Packages/User_bak
 
 ln  -s  `pwd` \
-  ~/.config/sublime-text-3/Packages/User # --force
+  ~/.config/sublime-text/Packages/User \
+  # --force

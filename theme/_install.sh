@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 sudo ln -s ~/.fonts /root/.fonts  
 sudo ln -s ~/.icons /root/.icons

@@ -1,3 +1,5 @@
+#!/usr/bin/zsh
+
 # Dart
 
 sudo apt-get update -y

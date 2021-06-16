@@ -23,11 +23,12 @@ sudo mount --bind '/Data/Apps'  '/Apps'
 # add Data to fstab
 lsblk -o 'UUID,NAME,FSTYPE,LABEL' \
   | grep "Data$" \
-  | grep -Eoe "^[0-9a-zA-Z\-]+" \
+  | grep -oE "^[0-9a-zA-Z\-]+" \
   > ~/Data-UUID.txt
 
-echo "UUID=`cat ~/Data-UUID.txt`  /Data  ext4  defaults  0  0" \
-  | sudo tee -a '/etc/fstab'
+echo "# Data
+UUID=`< ~/Data-UUID.txt`  /Data  ext4  defaults  0  0
+"  |  sudo tee -a '/etc/fstab'
 
 rm ~/Data-UUID.txt
 
@@ -35,13 +36,14 @@ rm ~/Data-UUID.txt
 # add Wnd to fstab
 lsblk -o 'UUID,NAME,FSTYPE,LABEL' \
   | grep "Wnd$" \
-  | grep -Eoe "^[0-9a-zA-Z\-]+" \
+  | grep -oE "^[0-9a-zA-Z\-]+" \
   > ~/Wnd-UUID.txt
 
-echo "UUID=`cat ~/Wnd-UUID.txt`  /Wnd  ntfs  defaults  0  2" \
-  | sudo tee -a '/etc/fstab'
+echo "# Wnd
+UUID=`< ~/Wnd-UUID.txt`  /Wnd  ntfs  defaults  0  2
+"  |  sudo tee -a '/etc/fstab'
 
-rm ~/Wnd-UUID.txt
+rm  ~/Wnd-UUID.txt
 
 
 # add mounts to fstab
@@ -49,4 +51,4 @@ echo '# mounts
 /Data/_my/dotfiles-ubuntu  /Cfg   none  bind
 /Data/_my                  /Site  none  bind
 /Data/Apps                 /Apps  none  bind
-' | sudo tee -a '/etc/fstab'
+'  |  sudo tee -a '/etc/fstab'

@@ -1,5 +1,8 @@
 # Firefox
 
+## Theme
+[Dark](https://addons.mozilla.org/en-US/firefox/addon/nicothin-dark-theme/) – true gray dark theme
+
 
 ## about:config
 

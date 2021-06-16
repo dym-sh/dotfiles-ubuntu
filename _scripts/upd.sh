@@ -19,11 +19,11 @@ deno upgrade
 
 
 # # python
-# pipupgrade -y --ignore-error
+pipupgrade -y --ignore-error
 
 
 # # haskell
-# cabal update
+cabal update
 
 
 # flatpak

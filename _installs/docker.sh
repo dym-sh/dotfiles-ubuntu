@@ -1,12 +1,21 @@
 #!/usr/bin/zsh
 
+# remove old versions
+sudo apt-get remove -y \
+  docker docker-engine \
+  docker.io containerd runc
+
+
 # install surrounding necessities
-sudo apt install -y \
+sudo apt-get update -y
+
+sudo apt-get install -y \
   apt-transport-https \
   ca-certificates \
   curl \
   gnupg \
   lsb-release
+
 
 # docker.com key file
 curl -fsSL 'https://download.docker.com/linux/ubuntu/gpg' \
@@ -37,6 +46,8 @@ $DISTRO stable \
 # update sources
 sudo apt update -y
 
+# check avaliable versions
+apt-cache madison docker-ce
 
 # install docker
 sudo apt install -y \

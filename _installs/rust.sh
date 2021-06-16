@@ -26,7 +26,9 @@ sudo apt install -y \
   openssl libssl1.1 libssl-dev \
   libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf \
+  'https://sh.rustup.rs' \
+  | sh
 
 source $HOME/.cargo/env
 
@@ -44,4 +46,3 @@ cargo clean
 OPENSSL_LIB_DIR="/usr/lib/x86_64-linux-gnu"
 OPENSSL_INCLUDE_DIR="/usr/include/openssl"
 cargo build
-
