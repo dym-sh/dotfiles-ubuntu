@@ -15,7 +15,7 @@ letsencrypt certonly \
   --agree-tos \
   --renew-by-default \
   --rsa-key-size 4096 \
-  --email cert+<DOMAIN>.<TLD>@<DOMAIN>.<TLD> \
+  --email ssl-cert@<DOMAIN>.<TLD> \
   -d <DOMAIN>.<TLD> -d www.<DOMAIN>.<TLD>
 
 # check every month and on server-restart

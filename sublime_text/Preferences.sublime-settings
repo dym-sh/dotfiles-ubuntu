@@ -1,31 +1,31 @@
-{ "animation_enabled" : false
-, "atomic_save" : false
-, "auto_close_tags" : false
-, "auto_complete_commit_on_tab" : true
-, "auto_complete_cycle" : true
-, "auto_indent" : true
-, "auto_match_enabled" : false
-, "caret_style" : "solid"
-, "color_scheme" : "Packages/Color Scheme - Default/Monokai.sublime-color-scheme"
-, "copy_with_empty_selection" : false
-, "dart_sdk_path" : "/home/dym/snap/flutter/common/flutter/bin/"
-, "default_line_ending" : "unix"
-, "drag_text" : false
-, "font_face" : "DejaVu Sans Mono"
-, "font_size" : 14
-, "ignored_packages" : [ "Vintage" ]
-, "line_padding_bottom" : 2
-, "line_padding_top" : 2
-, "native_tabs" : "disabled"
-, "open_files_in_new_window" : false
-, "save_on_focus_lost" : true
-, "shift_tab_unindent" : true
-, "show_encoding" : true
-, "tab_size" : 2
-, "theme" : "Adaptive.sublime-theme"
-, "translate_tabs_to_spaces" : true
-, "trim_automatic_white_space" : true
-, "trim_trailing_white_space_on_save" : true
-, "ui_scale" : 1.5
-, "word_wrap" : false
+{ "animation_enabled" : false,
+ "atomic_save" : false,
+ "auto_close_tags" : false,
+ "auto_complete_commit_on_tab" : true,
+ "auto_complete_cycle" : true,
+ "auto_indent" : true,
+ "auto_match_enabled" : false,
+ "caret_style" : "solid",
+ "color_scheme" : "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+ "copy_with_empty_selection" : false,
+ "dart_sdk_path" : "/home/dym/snap/flutter/common/flutter/bin/",
+ "default_line_ending" : "unix",
+ "drag_text" : false,
+ "font_face" : "DejaVu Sans Mono",
+ "font_size" : 14,
+ "ignored_packages" : [ "Vintage"],
+ "line_padding_bottom" : 2,
+ "line_padding_top" : 2,
+ "native_tabs" : "disabled",
+ "open_files_in_new_window" : false,
+ "save_on_focus_lost" : true,
+ "shift_tab_unindent" : true,
+ "show_encoding" : true,
+ "tab_size" : 2,
+ "theme" : "Adaptive.sublime-theme",
+ "translate_tabs_to_spaces" : true,
+ "trim_automatic_white_space" : true,
+ "trim_trailing_white_space_on_save" : true,
+ "ui_scale" : 1.5,
+ "word_wrap" : false,
 }

@@ -7,11 +7,6 @@ set $Meta Mod4
 ## global -- paths
 set $DEFAULT "/Data/_"
 
-## global -- scripts
-set $PRINT `prtscr`
-set $PRINT_WND `prtwnd`
-
-
 # window properties
 new_window none
 popup_during_fullscreen leave_fullscreen
@@ -39,9 +34,15 @@ bindsym XF86Hibernate exec --no-startup-id "systemctl hibernate"
 bindsym $Meta+Shift+k restart
 
 # screenshots
-bindsym Print exec --no-startup-id $PRINT
-bindsym XF86Tools exec --no-startup-id $PRINT
-bindsym Scroll exec --no-startup-id $PRINT_WND
+bindsym Print exec --no-startup-id prtscr
+bindsym $Alt+Print exec --no-startup-id prtscr
+bindsym $Meta+Print exec --no-startup-id prtscr
+bindsym Control+Print exec --no-startup-id prtscr
+bindsym Shift+Print exec --no-startup-id prtscr
+bindsym $Meta+Control+$Alt+Print exec --no-startup-id prtscr
+bindsym $Meta+Shift+$Alt+Print exec --no-startup-id prtscr
+bindsym $Meta+Control+Shift+$Alt+Print exec --no-startup-id prtscr
+bindsym XF86Tools exec --no-startup-id prtscr
 
 # new terminal window
 bindsym $Meta+Shift+Return exec i3-sensible-terminal
@@ -54,6 +55,11 @@ bindsym $Meta+Return exec "rofi -show run"
 bindsym $Meta+Tab workspace next
 bindsym $Meta+Shift+Tab workspace prev
 
+## navigating workspaces -- transfer between monitors
+bindsym Control+$Meta+Tab move workspace to output right
+bindsym Control+$Meta+Shift+Tab move workspace to output left
+
+
 # navigating windows
 bindsym $Meta+grave focus right
 bindsym $Meta+Shift+grave focus left
@@ -62,7 +68,7 @@ bindsym $Meta+Shift+Button5 focus right
 bindsym $Meta+Button4 workspace prev
 bindsym $Meta+Button5 workspace next
 
-## navigating windows -- closeing, positioning, and resizing
+## navigating windows -- closing, positioning, and resizing
 bindsym $Meta+Shift+Q kill
 bindsym $Meta+Shift+KP_0 fullscreen toggle
 bindsym $Meta+Shift+KP_5 floating toggle
@@ -70,6 +76,7 @@ bindsym $Meta+Shift+KP_4 move left
 bindsym $Meta+Shift+KP_6 move right
 bindsym $Meta+Shift+KP_8 move up
 bindsym $Meta+Shift+KP_2 move down
+
 
 # audio controls
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -154,6 +161,7 @@ bindsym $Meta+$Alt+KP_8 move container to workspace $w__KP_8
 bindsym $Meta+$Alt+KP_9 move container to workspace $w__KP_9
 
 
+
 # keyboard layouts
 bindsym $Meta+F1 exec setxkbmap us -variant mac && xmodmap ~/.Xmodmap
 bindsym $Meta+F2 exec setxkbmap ru -variant phonetic_mac && xmodmap ~/.Xmodmap
@@ -161,6 +169,5 @@ bindsym $Meta+F2 exec setxkbmap ru -variant phonetic_mac && xmodmap ~/.Xmodmap
 
 # startup
 exec_always --no-startup-id numlockx on
-exec workspace $w__4
 exec --no-startup-id "~/.xsession"
-exec i3-sensible-terminal
+exec workspace $w__4; exec i3-sensible-terminal

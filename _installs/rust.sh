@@ -2,6 +2,7 @@
 
 # rust & co
 
+# install road-1
 curl --proto '=https' --tlsv1.2 -sSf \
   https://sh.rustup.rs \
   | sh -s -- --default-toolchain none -y
@@ -20,7 +21,7 @@ env LIBSSH2_SYS_USE_PKG_CONFIG='' cargo install cargo-update
 
 # OR
 
-# rust & co
+# install road-2
 sudo apt install -y \
   cmake pkg-config python3 \
   openssl libssl1.1 libssl-dev \
@@ -35,7 +36,7 @@ source $HOME/.cargo/env
 
 ## cargo apps
 cargo install \
-  bat exa fd-find \
+  xh bat exa fd-find \
   broot jql sd \
   xargo
 

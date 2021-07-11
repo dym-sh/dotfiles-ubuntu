@@ -1,5 +1,14 @@
 #!/bin/bash
 
+
+## optional: remove old installs
+# sudo apt purge -y \
+#   nodejs npm
+# sudo apt autoremove -y
+# sudo rm -rf /usr/share/npm
+# sudo rm -rf /usr/share/nodejs
+
+
 # install node + npm
 sudo apt install -y \
   nodejs npm

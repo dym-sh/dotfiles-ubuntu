@@ -14,7 +14,7 @@ source "$ZSH/oh-my-zsh.sh"
 
 
 # oh-my-zsh newline after promt for the theme lambda
-PROMPT='> %~ $(git_prompt_info)%{$reset_color%}
+PROMPT='[`date "+%Y-%m-%d %H:%M:%S.%N"`] > %~ $(git_prompt_info)%{$reset_color%}
 λ '
 
 

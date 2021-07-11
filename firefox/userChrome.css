@@ -8,7 +8,7 @@
 
 }*/
 
-@supports -moz-bool-pref("browser.proton.enabled")
+/*@supports -moz-bool-pref("browser.proton.enabled")
 {
 
 #appcontent > #content
@@ -28,3 +28,4 @@
   }
 
 }
+*/

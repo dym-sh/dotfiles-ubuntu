@@ -5,6 +5,7 @@
 # postgres
 sudo apt install -y \
 	git build-essential cmake \
+  libmagic-dev \
 	postgresql postgresql-contrib
 
 # erlang
